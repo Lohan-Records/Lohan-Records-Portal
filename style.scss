@@ -67,25 +67,16 @@ html, body {
 	margin: 0;
 }
 body {
-	// overflow-x: hidden;
-	overflow: hidden;
+	// overflow: hidden;
 	background: $bg_color;
 	color: $primary_color;
 	text-align: center;
-	// perspective: $perspective;
 }
 a {
 	display: block;
 	text-decoration:none;
 }
-.outter {
-	// display: none;
-	height: 100%;
-}
-.intro {
-	height: 100%;
-	overflow: hidden;
-}
+
 // DNA
 $n_of_children: 100;
 $dnaH: 5vw;
@@ -171,15 +162,21 @@ $depth: 120px;
 	body {
 		perspective: 5000px;
 	}
-	$dnaH: 5vw;
-	$imgH: 4vw;
+	$dnaH: 7vw;
+	$imgH: 6vw;
 	// rotate_deg: can divide 360
 	$rotate_deg: 18deg;
 	// depth: can devide by (360deg / rotate_deg)
 	$depth: 40px;
 	.DNA {
 		@include dna3D($n_of_children, $rotate_deg, $depth);
-		animation: dna_move #{$n_of_children/2}s linear infinite;	
+		animation: dna_move #{$n_of_children/2}s linear infinite;
+		
+		img {
+			width: 70%;
+			height: $imgH;
+			padding: $dnaH - $imgH;
+		}
 	}
 	.btn {
 		font-size: 4vw;
