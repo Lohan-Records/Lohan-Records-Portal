@@ -1,0 +1,202 @@
+$bg_color: black;
+$primary_color: #EF5E00;
+$dark_color: #9b4810;
+$bright_color: #EEB938;
+// $perspective: 1000px;
+// $perspective: 0;
+
+
+///////////////////////////////////////////////////////////
+// Plain SASS Trigonometry Algorithm in Taylor Expansion //
+//													   //
+// Based on											  //
+//	  http://japborst.net/posts/sass-sines-and-cosines //
+///////////////////////////////////////////////////////////
+
+$pi: 3.14159265359;
+$_precision: 10;
+
+@function pow($base, $exp) {
+  $value: $base;
+  @if $exp > 1 {
+	@for $i from 2 through $exp {
+	  $value: $value * $base;
+	}
+  }
+  @if $exp < 1{
+	@for $i from 0 through -$exp {
+	  $value: $value / $base;
+	}
+  }
+  @return $value;
+}
+
+@function fact($num) {
+  $fact: 1;
+  @if $num > 0{
+	@for $i from 1 through $num {
+	  $fact: $fact * $i;
+	}
+  }
+  @return $fact;
+}
+
+@function _to_unitless_rad($angle) {
+  @if unit($angle) == "deg" {
+	$angle: $angle / 180deg * $pi;
+  }
+  @if unit($angle) == "rad" {
+	$angle: $angle / 1rad;
+  }
+  @return $angle;
+}
+
+@function sin($angle){
+  $a: _to_unitless_rad($angle);
+  $sin: $a;
+  @for $n from 1 through $_precision {
+	$sin: $sin + (pow(-1, $n) / fact(2 * $n + 1) ) * pow($a, (2 * $n + 1));
+  }
+  @return $sin;
+}
+// END sin
+
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+body {
+	// overflow-x: hidden;
+	overflow: hidden;
+	background: $bg_color;
+	color: $primary_color;
+	text-align: center;
+	// perspective: $perspective;
+}
+a {
+	display: block;
+	text-decoration:none;
+}
+.outter {
+	// display: none;
+	height: 100%;
+}
+.intro {
+	height: 100%;
+	overflow: hidden;
+}
+// DNA
+$n_of_children: 100;
+$dnaH: 5vw;
+$imgH: 4vw;
+// rotate_deg: can divide 360
+$rotate_deg: 12deg;
+// depth: can devide by (360deg / rotate_deg)
+$depth: 120px;
+@mixin dna3D ($n_of_children, $rotate_deg, $depth) {
+	$i: 1;
+	@for $child from $n_of_children to 1 {
+		:nth-child(#{$child - 1}) {
+			transform: 
+			rotateY($rotate_deg * $i)
+			translateZ(sin($rotate_deg * $i % 360) * $depth)
+		}
+		$i: $i + 1;
+	}
+}
+.DNA {
+	width: 100%;
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	transform-style: preserve-3d; // most important!
+	font-weight: bold;
+	font-family: Courier New, Courier, monospace;
+	@include dna3D($n_of_children, $rotate_deg, $depth);
+	animation: dna_move #{$n_of_children/2}s linear infinite;
+	// animation: dna_move 30s linear infinite;
+	
+	img {
+		width: 50%;
+		height: $imgH;
+		padding: $dnaH - $imgH;
+	}
+}
+@keyframes dna_move {
+	from {
+		transform: translateX(-50%)
+		rotateY(0)
+		translateY(0);
+	}
+	to {
+		transform: translateX(-50%)
+		rotateY(-$n_of_children * $rotate_deg)
+		translateY($n_of_children * $dnaH);
+	}
+}
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 9999;
+	transform: translate(-50%, -50%)
+				translateZ(800px); 
+				// for iOS: translateZ > z-index;
+	
+}
+.btn {
+	font-family: Courier New, Courier, monospace;
+	font-weight: bold;
+	font-style: italic;
+	color: $bright_color;
+	border: $bright_color 6px double;
+	border-radius: 6px;
+	box-shadow: 0 0 2px $bg_color;
+	padding: 0 20px;
+	margin: 12px 0;
+	font-size: $dnaH/2;
+	background-color: $bg_color;
+	opacity: .8;
+	transition: opacity .3s;
+	
+	&:hover {
+		cursor: pointer;
+		opacity: 1;
+	}
+}
+
+@media (max-width: 415px) {
+	body {
+		perspective: 5000px;
+	}
+	$dnaH: 5vw;
+	$imgH: 4vw;
+	// rotate_deg: can divide 360
+	$rotate_deg: 18deg;
+	// depth: can devide by (360deg / rotate_deg)
+	$depth: 40px;
+	.DNA {
+		@include dna3D($n_of_children, $rotate_deg, $depth);
+		animation: dna_move #{$n_of_children/2}s linear infinite;	
+	}
+	.btn {
+		font-size: 4vw;
+		border: $bright_color 4px double;
+		border-radius: 4px;
+	}
+
+	@keyframes dna_move {
+		from {
+			transform: translateX(-50%)
+			rotateY(0)
+			translateY(0);
+		}
+		to {
+			transform: translateX(-50%)
+			rotateY(-$n_of_children * $rotate_deg)
+			translateY($n_of_children * $dnaH);
+		}
+	}
+}

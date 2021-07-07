@@ -1,0 +1,1028 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: black;
+  color: #EF5E00;
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.outter {
+  height: 100%;
+}
+
+.intro {
+  height: 100%;
+  overflow: hidden;
+}
+
+.DNA {
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font-weight: bold;
+  font-family: Courier New, Courier, monospace;
+  -webkit-animation: dna_move 50s linear infinite;
+          animation: dna_move 50s linear infinite;
+}
+
+.DNA :nth-child(99) {
+  -webkit-transform: rotateY(12deg) translateZ(24.9494px);
+          transform: rotateY(12deg) translateZ(24.9494px);
+}
+
+.DNA :nth-child(98) {
+  -webkit-transform: rotateY(24deg) translateZ(48.8084px);
+          transform: rotateY(24deg) translateZ(48.8084px);
+}
+
+.DNA :nth-child(97) {
+  -webkit-transform: rotateY(36deg) translateZ(70.53423px);
+          transform: rotateY(36deg) translateZ(70.53423px);
+}
+
+.DNA :nth-child(96) {
+  -webkit-transform: rotateY(48deg) translateZ(89.17738px);
+          transform: rotateY(48deg) translateZ(89.17738px);
+}
+
+.DNA :nth-child(95) {
+  -webkit-transform: rotateY(60deg) translateZ(103.92305px);
+          transform: rotateY(60deg) translateZ(103.92305px);
+}
+
+.DNA :nth-child(94) {
+  -webkit-transform: rotateY(72deg) translateZ(114.12678px);
+          transform: rotateY(72deg) translateZ(114.12678px);
+}
+
+.DNA :nth-child(93) {
+  -webkit-transform: rotateY(84deg) translateZ(119.34263px);
+          transform: rotateY(84deg) translateZ(119.34263px);
+}
+
+.DNA :nth-child(92) {
+  -webkit-transform: rotateY(96deg) translateZ(119.34263px);
+          transform: rotateY(96deg) translateZ(119.34263px);
+}
+
+.DNA :nth-child(91) {
+  -webkit-transform: rotateY(108deg) translateZ(114.12678px);
+          transform: rotateY(108deg) translateZ(114.12678px);
+}
+
+.DNA :nth-child(90) {
+  -webkit-transform: rotateY(120deg) translateZ(103.92305px);
+          transform: rotateY(120deg) translateZ(103.92305px);
+}
+
+.DNA :nth-child(89) {
+  -webkit-transform: rotateY(132deg) translateZ(89.17738px);
+          transform: rotateY(132deg) translateZ(89.17738px);
+}
+
+.DNA :nth-child(88) {
+  -webkit-transform: rotateY(144deg) translateZ(70.53423px);
+          transform: rotateY(144deg) translateZ(70.53423px);
+}
+
+.DNA :nth-child(87) {
+  -webkit-transform: rotateY(156deg) translateZ(48.8084px);
+          transform: rotateY(156deg) translateZ(48.8084px);
+}
+
+.DNA :nth-child(86) {
+  -webkit-transform: rotateY(168deg) translateZ(24.9494px);
+          transform: rotateY(168deg) translateZ(24.9494px);
+}
+
+.DNA :nth-child(85) {
+  -webkit-transform: rotateY(180deg) translateZ(0px);
+          transform: rotateY(180deg) translateZ(0px);
+}
+
+.DNA :nth-child(84) {
+  -webkit-transform: rotateY(192deg) translateZ(-24.9494px);
+          transform: rotateY(192deg) translateZ(-24.9494px);
+}
+
+.DNA :nth-child(83) {
+  -webkit-transform: rotateY(204deg) translateZ(-48.8084px);
+          transform: rotateY(204deg) translateZ(-48.8084px);
+}
+
+.DNA :nth-child(82) {
+  -webkit-transform: rotateY(216deg) translateZ(-70.53423px);
+          transform: rotateY(216deg) translateZ(-70.53423px);
+}
+
+.DNA :nth-child(81) {
+  -webkit-transform: rotateY(228deg) translateZ(-89.17738px);
+          transform: rotateY(228deg) translateZ(-89.17738px);
+}
+
+.DNA :nth-child(80) {
+  -webkit-transform: rotateY(240deg) translateZ(-103.92305px);
+          transform: rotateY(240deg) translateZ(-103.92305px);
+}
+
+.DNA :nth-child(79) {
+  -webkit-transform: rotateY(252deg) translateZ(-114.12678px);
+          transform: rotateY(252deg) translateZ(-114.12678px);
+}
+
+.DNA :nth-child(78) {
+  -webkit-transform: rotateY(264deg) translateZ(-119.34262px);
+          transform: rotateY(264deg) translateZ(-119.34262px);
+}
+
+.DNA :nth-child(77) {
+  -webkit-transform: rotateY(276deg) translateZ(-119.3426px);
+          transform: rotateY(276deg) translateZ(-119.3426px);
+}
+
+.DNA :nth-child(76) {
+  -webkit-transform: rotateY(288deg) translateZ(-114.12672px);
+          transform: rotateY(288deg) translateZ(-114.12672px);
+}
+
+.DNA :nth-child(75) {
+  -webkit-transform: rotateY(300deg) translateZ(-103.9229px);
+          transform: rotateY(300deg) translateZ(-103.9229px);
+}
+
+.DNA :nth-child(74) {
+  -webkit-transform: rotateY(312deg) translateZ(-89.177px);
+          transform: rotateY(312deg) translateZ(-89.177px);
+}
+
+.DNA :nth-child(73) {
+  -webkit-transform: rotateY(324deg) translateZ(-70.53334px);
+          transform: rotateY(324deg) translateZ(-70.53334px);
+}
+
+.DNA :nth-child(72) {
+  -webkit-transform: rotateY(336deg) translateZ(-48.80635px);
+          transform: rotateY(336deg) translateZ(-48.80635px);
+}
+
+.DNA :nth-child(71) {
+  -webkit-transform: rotateY(348deg) translateZ(-24.94483px);
+          transform: rotateY(348deg) translateZ(-24.94483px);
+}
+
+.DNA :nth-child(70) {
+  -webkit-transform: rotateY(360deg) translateZ(0px);
+          transform: rotateY(360deg) translateZ(0px);
+}
+
+.DNA :nth-child(69) {
+  -webkit-transform: rotateY(372deg) translateZ(24.9494px);
+          transform: rotateY(372deg) translateZ(24.9494px);
+}
+
+.DNA :nth-child(68) {
+  -webkit-transform: rotateY(384deg) translateZ(48.8084px);
+          transform: rotateY(384deg) translateZ(48.8084px);
+}
+
+.DNA :nth-child(67) {
+  -webkit-transform: rotateY(396deg) translateZ(70.53423px);
+          transform: rotateY(396deg) translateZ(70.53423px);
+}
+
+.DNA :nth-child(66) {
+  -webkit-transform: rotateY(408deg) translateZ(89.17738px);
+          transform: rotateY(408deg) translateZ(89.17738px);
+}
+
+.DNA :nth-child(65) {
+  -webkit-transform: rotateY(420deg) translateZ(103.92305px);
+          transform: rotateY(420deg) translateZ(103.92305px);
+}
+
+.DNA :nth-child(64) {
+  -webkit-transform: rotateY(432deg) translateZ(114.12678px);
+          transform: rotateY(432deg) translateZ(114.12678px);
+}
+
+.DNA :nth-child(63) {
+  -webkit-transform: rotateY(444deg) translateZ(119.34263px);
+          transform: rotateY(444deg) translateZ(119.34263px);
+}
+
+.DNA :nth-child(62) {
+  -webkit-transform: rotateY(456deg) translateZ(119.34263px);
+          transform: rotateY(456deg) translateZ(119.34263px);
+}
+
+.DNA :nth-child(61) {
+  -webkit-transform: rotateY(468deg) translateZ(114.12678px);
+          transform: rotateY(468deg) translateZ(114.12678px);
+}
+
+.DNA :nth-child(60) {
+  -webkit-transform: rotateY(480deg) translateZ(103.92305px);
+          transform: rotateY(480deg) translateZ(103.92305px);
+}
+
+.DNA :nth-child(59) {
+  -webkit-transform: rotateY(492deg) translateZ(89.17738px);
+          transform: rotateY(492deg) translateZ(89.17738px);
+}
+
+.DNA :nth-child(58) {
+  -webkit-transform: rotateY(504deg) translateZ(70.53423px);
+          transform: rotateY(504deg) translateZ(70.53423px);
+}
+
+.DNA :nth-child(57) {
+  -webkit-transform: rotateY(516deg) translateZ(48.8084px);
+          transform: rotateY(516deg) translateZ(48.8084px);
+}
+
+.DNA :nth-child(56) {
+  -webkit-transform: rotateY(528deg) translateZ(24.9494px);
+          transform: rotateY(528deg) translateZ(24.9494px);
+}
+
+.DNA :nth-child(55) {
+  -webkit-transform: rotateY(540deg) translateZ(0px);
+          transform: rotateY(540deg) translateZ(0px);
+}
+
+.DNA :nth-child(54) {
+  -webkit-transform: rotateY(552deg) translateZ(-24.9494px);
+          transform: rotateY(552deg) translateZ(-24.9494px);
+}
+
+.DNA :nth-child(53) {
+  -webkit-transform: rotateY(564deg) translateZ(-48.8084px);
+          transform: rotateY(564deg) translateZ(-48.8084px);
+}
+
+.DNA :nth-child(52) {
+  -webkit-transform: rotateY(576deg) translateZ(-70.53423px);
+          transform: rotateY(576deg) translateZ(-70.53423px);
+}
+
+.DNA :nth-child(51) {
+  -webkit-transform: rotateY(588deg) translateZ(-89.17738px);
+          transform: rotateY(588deg) translateZ(-89.17738px);
+}
+
+.DNA :nth-child(50) {
+  -webkit-transform: rotateY(600deg) translateZ(-103.92305px);
+          transform: rotateY(600deg) translateZ(-103.92305px);
+}
+
+.DNA :nth-child(49) {
+  -webkit-transform: rotateY(612deg) translateZ(-114.12678px);
+          transform: rotateY(612deg) translateZ(-114.12678px);
+}
+
+.DNA :nth-child(48) {
+  -webkit-transform: rotateY(624deg) translateZ(-119.34262px);
+          transform: rotateY(624deg) translateZ(-119.34262px);
+}
+
+.DNA :nth-child(47) {
+  -webkit-transform: rotateY(636deg) translateZ(-119.3426px);
+          transform: rotateY(636deg) translateZ(-119.3426px);
+}
+
+.DNA :nth-child(46) {
+  -webkit-transform: rotateY(648deg) translateZ(-114.12672px);
+          transform: rotateY(648deg) translateZ(-114.12672px);
+}
+
+.DNA :nth-child(45) {
+  -webkit-transform: rotateY(660deg) translateZ(-103.9229px);
+          transform: rotateY(660deg) translateZ(-103.9229px);
+}
+
+.DNA :nth-child(44) {
+  -webkit-transform: rotateY(672deg) translateZ(-89.177px);
+          transform: rotateY(672deg) translateZ(-89.177px);
+}
+
+.DNA :nth-child(43) {
+  -webkit-transform: rotateY(684deg) translateZ(-70.53334px);
+          transform: rotateY(684deg) translateZ(-70.53334px);
+}
+
+.DNA :nth-child(42) {
+  -webkit-transform: rotateY(696deg) translateZ(-48.80635px);
+          transform: rotateY(696deg) translateZ(-48.80635px);
+}
+
+.DNA :nth-child(41) {
+  -webkit-transform: rotateY(708deg) translateZ(-24.94483px);
+          transform: rotateY(708deg) translateZ(-24.94483px);
+}
+
+.DNA :nth-child(40) {
+  -webkit-transform: rotateY(720deg) translateZ(0px);
+          transform: rotateY(720deg) translateZ(0px);
+}
+
+.DNA :nth-child(39) {
+  -webkit-transform: rotateY(732deg) translateZ(24.9494px);
+          transform: rotateY(732deg) translateZ(24.9494px);
+}
+
+.DNA :nth-child(38) {
+  -webkit-transform: rotateY(744deg) translateZ(48.8084px);
+          transform: rotateY(744deg) translateZ(48.8084px);
+}
+
+.DNA :nth-child(37) {
+  -webkit-transform: rotateY(756deg) translateZ(70.53423px);
+          transform: rotateY(756deg) translateZ(70.53423px);
+}
+
+.DNA :nth-child(36) {
+  -webkit-transform: rotateY(768deg) translateZ(89.17738px);
+          transform: rotateY(768deg) translateZ(89.17738px);
+}
+
+.DNA :nth-child(35) {
+  -webkit-transform: rotateY(780deg) translateZ(103.92305px);
+          transform: rotateY(780deg) translateZ(103.92305px);
+}
+
+.DNA :nth-child(34) {
+  -webkit-transform: rotateY(792deg) translateZ(114.12678px);
+          transform: rotateY(792deg) translateZ(114.12678px);
+}
+
+.DNA :nth-child(33) {
+  -webkit-transform: rotateY(804deg) translateZ(119.34263px);
+          transform: rotateY(804deg) translateZ(119.34263px);
+}
+
+.DNA :nth-child(32) {
+  -webkit-transform: rotateY(816deg) translateZ(119.34263px);
+          transform: rotateY(816deg) translateZ(119.34263px);
+}
+
+.DNA :nth-child(31) {
+  -webkit-transform: rotateY(828deg) translateZ(114.12678px);
+          transform: rotateY(828deg) translateZ(114.12678px);
+}
+
+.DNA :nth-child(30) {
+  -webkit-transform: rotateY(840deg) translateZ(103.92305px);
+          transform: rotateY(840deg) translateZ(103.92305px);
+}
+
+.DNA :nth-child(29) {
+  -webkit-transform: rotateY(852deg) translateZ(89.17738px);
+          transform: rotateY(852deg) translateZ(89.17738px);
+}
+
+.DNA :nth-child(28) {
+  -webkit-transform: rotateY(864deg) translateZ(70.53423px);
+          transform: rotateY(864deg) translateZ(70.53423px);
+}
+
+.DNA :nth-child(27) {
+  -webkit-transform: rotateY(876deg) translateZ(48.8084px);
+          transform: rotateY(876deg) translateZ(48.8084px);
+}
+
+.DNA :nth-child(26) {
+  -webkit-transform: rotateY(888deg) translateZ(24.9494px);
+          transform: rotateY(888deg) translateZ(24.9494px);
+}
+
+.DNA :nth-child(25) {
+  -webkit-transform: rotateY(900deg) translateZ(0px);
+          transform: rotateY(900deg) translateZ(0px);
+}
+
+.DNA :nth-child(24) {
+  -webkit-transform: rotateY(912deg) translateZ(-24.9494px);
+          transform: rotateY(912deg) translateZ(-24.9494px);
+}
+
+.DNA :nth-child(23) {
+  -webkit-transform: rotateY(924deg) translateZ(-48.8084px);
+          transform: rotateY(924deg) translateZ(-48.8084px);
+}
+
+.DNA :nth-child(22) {
+  -webkit-transform: rotateY(936deg) translateZ(-70.53423px);
+          transform: rotateY(936deg) translateZ(-70.53423px);
+}
+
+.DNA :nth-child(21) {
+  -webkit-transform: rotateY(948deg) translateZ(-89.17738px);
+          transform: rotateY(948deg) translateZ(-89.17738px);
+}
+
+.DNA :nth-child(20) {
+  -webkit-transform: rotateY(960deg) translateZ(-103.92305px);
+          transform: rotateY(960deg) translateZ(-103.92305px);
+}
+
+.DNA :nth-child(19) {
+  -webkit-transform: rotateY(972deg) translateZ(-114.12678px);
+          transform: rotateY(972deg) translateZ(-114.12678px);
+}
+
+.DNA :nth-child(18) {
+  -webkit-transform: rotateY(984deg) translateZ(-119.34262px);
+          transform: rotateY(984deg) translateZ(-119.34262px);
+}
+
+.DNA :nth-child(17) {
+  -webkit-transform: rotateY(996deg) translateZ(-119.3426px);
+          transform: rotateY(996deg) translateZ(-119.3426px);
+}
+
+.DNA :nth-child(16) {
+  -webkit-transform: rotateY(1008deg) translateZ(-114.12672px);
+          transform: rotateY(1008deg) translateZ(-114.12672px);
+}
+
+.DNA :nth-child(15) {
+  -webkit-transform: rotateY(1020deg) translateZ(-103.9229px);
+          transform: rotateY(1020deg) translateZ(-103.9229px);
+}
+
+.DNA :nth-child(14) {
+  -webkit-transform: rotateY(1032deg) translateZ(-89.177px);
+          transform: rotateY(1032deg) translateZ(-89.177px);
+}
+
+.DNA :nth-child(13) {
+  -webkit-transform: rotateY(1044deg) translateZ(-70.53334px);
+          transform: rotateY(1044deg) translateZ(-70.53334px);
+}
+
+.DNA :nth-child(12) {
+  -webkit-transform: rotateY(1056deg) translateZ(-48.80635px);
+          transform: rotateY(1056deg) translateZ(-48.80635px);
+}
+
+.DNA :nth-child(11) {
+  -webkit-transform: rotateY(1068deg) translateZ(-24.94483px);
+          transform: rotateY(1068deg) translateZ(-24.94483px);
+}
+
+.DNA :nth-child(10) {
+  -webkit-transform: rotateY(1080deg) translateZ(0px);
+          transform: rotateY(1080deg) translateZ(0px);
+}
+
+.DNA :nth-child(9) {
+  -webkit-transform: rotateY(1092deg) translateZ(24.9494px);
+          transform: rotateY(1092deg) translateZ(24.9494px);
+}
+
+.DNA :nth-child(8) {
+  -webkit-transform: rotateY(1104deg) translateZ(48.8084px);
+          transform: rotateY(1104deg) translateZ(48.8084px);
+}
+
+.DNA :nth-child(7) {
+  -webkit-transform: rotateY(1116deg) translateZ(70.53423px);
+          transform: rotateY(1116deg) translateZ(70.53423px);
+}
+
+.DNA :nth-child(6) {
+  -webkit-transform: rotateY(1128deg) translateZ(89.17738px);
+          transform: rotateY(1128deg) translateZ(89.17738px);
+}
+
+.DNA :nth-child(5) {
+  -webkit-transform: rotateY(1140deg) translateZ(103.92305px);
+          transform: rotateY(1140deg) translateZ(103.92305px);
+}
+
+.DNA :nth-child(4) {
+  -webkit-transform: rotateY(1152deg) translateZ(114.12678px);
+          transform: rotateY(1152deg) translateZ(114.12678px);
+}
+
+.DNA :nth-child(3) {
+  -webkit-transform: rotateY(1164deg) translateZ(119.34263px);
+          transform: rotateY(1164deg) translateZ(119.34263px);
+}
+
+.DNA :nth-child(2) {
+  -webkit-transform: rotateY(1176deg) translateZ(119.34263px);
+          transform: rotateY(1176deg) translateZ(119.34263px);
+}
+
+.DNA :nth-child(1) {
+  -webkit-transform: rotateY(1188deg) translateZ(114.12678px);
+          transform: rotateY(1188deg) translateZ(114.12678px);
+}
+
+.DNA img {
+  width: 50%;
+  height: 4vw;
+  padding: 1vw;
+}
+
+@-webkit-keyframes dna_move {
+  from {
+    -webkit-transform: translateX(-50%) rotateY(0) translateY(0);
+            transform: translateX(-50%) rotateY(0) translateY(0);
+  }
+  to {
+    -webkit-transform: translateX(-50%) rotateY(-1200deg) translateY(500vw);
+            transform: translateX(-50%) rotateY(-1200deg) translateY(500vw);
+  }
+}
+
+@keyframes dna_move {
+  from {
+    -webkit-transform: translateX(-50%) rotateY(0) translateY(0);
+            transform: translateX(-50%) rotateY(0) translateY(0);
+  }
+  to {
+    -webkit-transform: translateX(-50%) rotateY(-1200deg) translateY(500vw);
+            transform: translateX(-50%) rotateY(-1200deg) translateY(500vw);
+  }
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  -webkit-transform: translate(-50%, -50%) translateZ(800px);
+          transform: translate(-50%, -50%) translateZ(800px);
+}
+
+.btn {
+  font-family: Courier New, Courier, monospace;
+  font-weight: bold;
+  font-style: italic;
+  color: #EEB938;
+  border: #EEB938 6px double;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 2px black;
+          box-shadow: 0 0 2px black;
+  padding: 0 20px;
+  margin: 12px 0;
+  font-size: 2.5vw;
+  background-color: black;
+  opacity: .8;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media (max-width: 415px) {
+  body {
+    -webkit-perspective: 5000px;
+            perspective: 5000px;
+  }
+  .DNA {
+    -webkit-animation: dna_move 50s linear infinite;
+            animation: dna_move 50s linear infinite;
+  }
+  .DNA :nth-child(99) {
+    -webkit-transform: rotateY(18deg) translateZ(12.36068px);
+            transform: rotateY(18deg) translateZ(12.36068px);
+  }
+  .DNA :nth-child(98) {
+    -webkit-transform: rotateY(36deg) translateZ(23.51141px);
+            transform: rotateY(36deg) translateZ(23.51141px);
+  }
+  .DNA :nth-child(97) {
+    -webkit-transform: rotateY(54deg) translateZ(32.36068px);
+            transform: rotateY(54deg) translateZ(32.36068px);
+  }
+  .DNA :nth-child(96) {
+    -webkit-transform: rotateY(72deg) translateZ(38.04226px);
+            transform: rotateY(72deg) translateZ(38.04226px);
+  }
+  .DNA :nth-child(95) {
+    -webkit-transform: rotateY(90deg) translateZ(40px);
+            transform: rotateY(90deg) translateZ(40px);
+  }
+  .DNA :nth-child(94) {
+    -webkit-transform: rotateY(108deg) translateZ(38.04226px);
+            transform: rotateY(108deg) translateZ(38.04226px);
+  }
+  .DNA :nth-child(93) {
+    -webkit-transform: rotateY(126deg) translateZ(32.36068px);
+            transform: rotateY(126deg) translateZ(32.36068px);
+  }
+  .DNA :nth-child(92) {
+    -webkit-transform: rotateY(144deg) translateZ(23.51141px);
+            transform: rotateY(144deg) translateZ(23.51141px);
+  }
+  .DNA :nth-child(91) {
+    -webkit-transform: rotateY(162deg) translateZ(12.36068px);
+            transform: rotateY(162deg) translateZ(12.36068px);
+  }
+  .DNA :nth-child(90) {
+    -webkit-transform: rotateY(180deg) translateZ(0px);
+            transform: rotateY(180deg) translateZ(0px);
+  }
+  .DNA :nth-child(89) {
+    -webkit-transform: rotateY(198deg) translateZ(-12.36068px);
+            transform: rotateY(198deg) translateZ(-12.36068px);
+  }
+  .DNA :nth-child(88) {
+    -webkit-transform: rotateY(216deg) translateZ(-23.51141px);
+            transform: rotateY(216deg) translateZ(-23.51141px);
+  }
+  .DNA :nth-child(87) {
+    -webkit-transform: rotateY(234deg) translateZ(-32.36068px);
+            transform: rotateY(234deg) translateZ(-32.36068px);
+  }
+  .DNA :nth-child(86) {
+    -webkit-transform: rotateY(252deg) translateZ(-38.04226px);
+            transform: rotateY(252deg) translateZ(-38.04226px);
+  }
+  .DNA :nth-child(85) {
+    -webkit-transform: rotateY(270deg) translateZ(-40.0px);
+            transform: rotateY(270deg) translateZ(-40.0px);
+  }
+  .DNA :nth-child(84) {
+    -webkit-transform: rotateY(288deg) translateZ(-38.04224px);
+            transform: rotateY(288deg) translateZ(-38.04224px);
+  }
+  .DNA :nth-child(83) {
+    -webkit-transform: rotateY(306deg) translateZ(-32.3606px);
+            transform: rotateY(306deg) translateZ(-32.3606px);
+  }
+  .DNA :nth-child(82) {
+    -webkit-transform: rotateY(324deg) translateZ(-23.51111px);
+            transform: rotateY(324deg) translateZ(-23.51111px);
+  }
+  .DNA :nth-child(81) {
+    -webkit-transform: rotateY(342deg) translateZ(-12.35966px);
+            transform: rotateY(342deg) translateZ(-12.35966px);
+  }
+  .DNA :nth-child(80) {
+    -webkit-transform: rotateY(360deg) translateZ(0px);
+            transform: rotateY(360deg) translateZ(0px);
+  }
+  .DNA :nth-child(79) {
+    -webkit-transform: rotateY(378deg) translateZ(12.36068px);
+            transform: rotateY(378deg) translateZ(12.36068px);
+  }
+  .DNA :nth-child(78) {
+    -webkit-transform: rotateY(396deg) translateZ(23.51141px);
+            transform: rotateY(396deg) translateZ(23.51141px);
+  }
+  .DNA :nth-child(77) {
+    -webkit-transform: rotateY(414deg) translateZ(32.36068px);
+            transform: rotateY(414deg) translateZ(32.36068px);
+  }
+  .DNA :nth-child(76) {
+    -webkit-transform: rotateY(432deg) translateZ(38.04226px);
+            transform: rotateY(432deg) translateZ(38.04226px);
+  }
+  .DNA :nth-child(75) {
+    -webkit-transform: rotateY(450deg) translateZ(40px);
+            transform: rotateY(450deg) translateZ(40px);
+  }
+  .DNA :nth-child(74) {
+    -webkit-transform: rotateY(468deg) translateZ(38.04226px);
+            transform: rotateY(468deg) translateZ(38.04226px);
+  }
+  .DNA :nth-child(73) {
+    -webkit-transform: rotateY(486deg) translateZ(32.36068px);
+            transform: rotateY(486deg) translateZ(32.36068px);
+  }
+  .DNA :nth-child(72) {
+    -webkit-transform: rotateY(504deg) translateZ(23.51141px);
+            transform: rotateY(504deg) translateZ(23.51141px);
+  }
+  .DNA :nth-child(71) {
+    -webkit-transform: rotateY(522deg) translateZ(12.36068px);
+            transform: rotateY(522deg) translateZ(12.36068px);
+  }
+  .DNA :nth-child(70) {
+    -webkit-transform: rotateY(540deg) translateZ(0px);
+            transform: rotateY(540deg) translateZ(0px);
+  }
+  .DNA :nth-child(69) {
+    -webkit-transform: rotateY(558deg) translateZ(-12.36068px);
+            transform: rotateY(558deg) translateZ(-12.36068px);
+  }
+  .DNA :nth-child(68) {
+    -webkit-transform: rotateY(576deg) translateZ(-23.51141px);
+            transform: rotateY(576deg) translateZ(-23.51141px);
+  }
+  .DNA :nth-child(67) {
+    -webkit-transform: rotateY(594deg) translateZ(-32.36068px);
+            transform: rotateY(594deg) translateZ(-32.36068px);
+  }
+  .DNA :nth-child(66) {
+    -webkit-transform: rotateY(612deg) translateZ(-38.04226px);
+            transform: rotateY(612deg) translateZ(-38.04226px);
+  }
+  .DNA :nth-child(65) {
+    -webkit-transform: rotateY(630deg) translateZ(-40.0px);
+            transform: rotateY(630deg) translateZ(-40.0px);
+  }
+  .DNA :nth-child(64) {
+    -webkit-transform: rotateY(648deg) translateZ(-38.04224px);
+            transform: rotateY(648deg) translateZ(-38.04224px);
+  }
+  .DNA :nth-child(63) {
+    -webkit-transform: rotateY(666deg) translateZ(-32.3606px);
+            transform: rotateY(666deg) translateZ(-32.3606px);
+  }
+  .DNA :nth-child(62) {
+    -webkit-transform: rotateY(684deg) translateZ(-23.51111px);
+            transform: rotateY(684deg) translateZ(-23.51111px);
+  }
+  .DNA :nth-child(61) {
+    -webkit-transform: rotateY(702deg) translateZ(-12.35966px);
+            transform: rotateY(702deg) translateZ(-12.35966px);
+  }
+  .DNA :nth-child(60) {
+    -webkit-transform: rotateY(720deg) translateZ(0px);
+            transform: rotateY(720deg) translateZ(0px);
+  }
+  .DNA :nth-child(59) {
+    -webkit-transform: rotateY(738deg) translateZ(12.36068px);
+            transform: rotateY(738deg) translateZ(12.36068px);
+  }
+  .DNA :nth-child(58) {
+    -webkit-transform: rotateY(756deg) translateZ(23.51141px);
+            transform: rotateY(756deg) translateZ(23.51141px);
+  }
+  .DNA :nth-child(57) {
+    -webkit-transform: rotateY(774deg) translateZ(32.36068px);
+            transform: rotateY(774deg) translateZ(32.36068px);
+  }
+  .DNA :nth-child(56) {
+    -webkit-transform: rotateY(792deg) translateZ(38.04226px);
+            transform: rotateY(792deg) translateZ(38.04226px);
+  }
+  .DNA :nth-child(55) {
+    -webkit-transform: rotateY(810deg) translateZ(40px);
+            transform: rotateY(810deg) translateZ(40px);
+  }
+  .DNA :nth-child(54) {
+    -webkit-transform: rotateY(828deg) translateZ(38.04226px);
+            transform: rotateY(828deg) translateZ(38.04226px);
+  }
+  .DNA :nth-child(53) {
+    -webkit-transform: rotateY(846deg) translateZ(32.36068px);
+            transform: rotateY(846deg) translateZ(32.36068px);
+  }
+  .DNA :nth-child(52) {
+    -webkit-transform: rotateY(864deg) translateZ(23.51141px);
+            transform: rotateY(864deg) translateZ(23.51141px);
+  }
+  .DNA :nth-child(51) {
+    -webkit-transform: rotateY(882deg) translateZ(12.36068px);
+            transform: rotateY(882deg) translateZ(12.36068px);
+  }
+  .DNA :nth-child(50) {
+    -webkit-transform: rotateY(900deg) translateZ(0px);
+            transform: rotateY(900deg) translateZ(0px);
+  }
+  .DNA :nth-child(49) {
+    -webkit-transform: rotateY(918deg) translateZ(-12.36068px);
+            transform: rotateY(918deg) translateZ(-12.36068px);
+  }
+  .DNA :nth-child(48) {
+    -webkit-transform: rotateY(936deg) translateZ(-23.51141px);
+            transform: rotateY(936deg) translateZ(-23.51141px);
+  }
+  .DNA :nth-child(47) {
+    -webkit-transform: rotateY(954deg) translateZ(-32.36068px);
+            transform: rotateY(954deg) translateZ(-32.36068px);
+  }
+  .DNA :nth-child(46) {
+    -webkit-transform: rotateY(972deg) translateZ(-38.04226px);
+            transform: rotateY(972deg) translateZ(-38.04226px);
+  }
+  .DNA :nth-child(45) {
+    -webkit-transform: rotateY(990deg) translateZ(-40.0px);
+            transform: rotateY(990deg) translateZ(-40.0px);
+  }
+  .DNA :nth-child(44) {
+    -webkit-transform: rotateY(1008deg) translateZ(-38.04224px);
+            transform: rotateY(1008deg) translateZ(-38.04224px);
+  }
+  .DNA :nth-child(43) {
+    -webkit-transform: rotateY(1026deg) translateZ(-32.3606px);
+            transform: rotateY(1026deg) translateZ(-32.3606px);
+  }
+  .DNA :nth-child(42) {
+    -webkit-transform: rotateY(1044deg) translateZ(-23.51111px);
+            transform: rotateY(1044deg) translateZ(-23.51111px);
+  }
+  .DNA :nth-child(41) {
+    -webkit-transform: rotateY(1062deg) translateZ(-12.35966px);
+            transform: rotateY(1062deg) translateZ(-12.35966px);
+  }
+  .DNA :nth-child(40) {
+    -webkit-transform: rotateY(1080deg) translateZ(0px);
+            transform: rotateY(1080deg) translateZ(0px);
+  }
+  .DNA :nth-child(39) {
+    -webkit-transform: rotateY(1098deg) translateZ(12.36068px);
+            transform: rotateY(1098deg) translateZ(12.36068px);
+  }
+  .DNA :nth-child(38) {
+    -webkit-transform: rotateY(1116deg) translateZ(23.51141px);
+            transform: rotateY(1116deg) translateZ(23.51141px);
+  }
+  .DNA :nth-child(37) {
+    -webkit-transform: rotateY(1134deg) translateZ(32.36068px);
+            transform: rotateY(1134deg) translateZ(32.36068px);
+  }
+  .DNA :nth-child(36) {
+    -webkit-transform: rotateY(1152deg) translateZ(38.04226px);
+            transform: rotateY(1152deg) translateZ(38.04226px);
+  }
+  .DNA :nth-child(35) {
+    -webkit-transform: rotateY(1170deg) translateZ(40px);
+            transform: rotateY(1170deg) translateZ(40px);
+  }
+  .DNA :nth-child(34) {
+    -webkit-transform: rotateY(1188deg) translateZ(38.04226px);
+            transform: rotateY(1188deg) translateZ(38.04226px);
+  }
+  .DNA :nth-child(33) {
+    -webkit-transform: rotateY(1206deg) translateZ(32.36068px);
+            transform: rotateY(1206deg) translateZ(32.36068px);
+  }
+  .DNA :nth-child(32) {
+    -webkit-transform: rotateY(1224deg) translateZ(23.51141px);
+            transform: rotateY(1224deg) translateZ(23.51141px);
+  }
+  .DNA :nth-child(31) {
+    -webkit-transform: rotateY(1242deg) translateZ(12.36068px);
+            transform: rotateY(1242deg) translateZ(12.36068px);
+  }
+  .DNA :nth-child(30) {
+    -webkit-transform: rotateY(1260deg) translateZ(0px);
+            transform: rotateY(1260deg) translateZ(0px);
+  }
+  .DNA :nth-child(29) {
+    -webkit-transform: rotateY(1278deg) translateZ(-12.36068px);
+            transform: rotateY(1278deg) translateZ(-12.36068px);
+  }
+  .DNA :nth-child(28) {
+    -webkit-transform: rotateY(1296deg) translateZ(-23.51141px);
+            transform: rotateY(1296deg) translateZ(-23.51141px);
+  }
+  .DNA :nth-child(27) {
+    -webkit-transform: rotateY(1314deg) translateZ(-32.36068px);
+            transform: rotateY(1314deg) translateZ(-32.36068px);
+  }
+  .DNA :nth-child(26) {
+    -webkit-transform: rotateY(1332deg) translateZ(-38.04226px);
+            transform: rotateY(1332deg) translateZ(-38.04226px);
+  }
+  .DNA :nth-child(25) {
+    -webkit-transform: rotateY(1350deg) translateZ(-40.0px);
+            transform: rotateY(1350deg) translateZ(-40.0px);
+  }
+  .DNA :nth-child(24) {
+    -webkit-transform: rotateY(1368deg) translateZ(-38.04224px);
+            transform: rotateY(1368deg) translateZ(-38.04224px);
+  }
+  .DNA :nth-child(23) {
+    -webkit-transform: rotateY(1386deg) translateZ(-32.3606px);
+            transform: rotateY(1386deg) translateZ(-32.3606px);
+  }
+  .DNA :nth-child(22) {
+    -webkit-transform: rotateY(1404deg) translateZ(-23.51111px);
+            transform: rotateY(1404deg) translateZ(-23.51111px);
+  }
+  .DNA :nth-child(21) {
+    -webkit-transform: rotateY(1422deg) translateZ(-12.35966px);
+            transform: rotateY(1422deg) translateZ(-12.35966px);
+  }
+  .DNA :nth-child(20) {
+    -webkit-transform: rotateY(1440deg) translateZ(0px);
+            transform: rotateY(1440deg) translateZ(0px);
+  }
+  .DNA :nth-child(19) {
+    -webkit-transform: rotateY(1458deg) translateZ(12.36068px);
+            transform: rotateY(1458deg) translateZ(12.36068px);
+  }
+  .DNA :nth-child(18) {
+    -webkit-transform: rotateY(1476deg) translateZ(23.51141px);
+            transform: rotateY(1476deg) translateZ(23.51141px);
+  }
+  .DNA :nth-child(17) {
+    -webkit-transform: rotateY(1494deg) translateZ(32.36068px);
+            transform: rotateY(1494deg) translateZ(32.36068px);
+  }
+  .DNA :nth-child(16) {
+    -webkit-transform: rotateY(1512deg) translateZ(38.04226px);
+            transform: rotateY(1512deg) translateZ(38.04226px);
+  }
+  .DNA :nth-child(15) {
+    -webkit-transform: rotateY(1530deg) translateZ(40px);
+            transform: rotateY(1530deg) translateZ(40px);
+  }
+  .DNA :nth-child(14) {
+    -webkit-transform: rotateY(1548deg) translateZ(38.04226px);
+            transform: rotateY(1548deg) translateZ(38.04226px);
+  }
+  .DNA :nth-child(13) {
+    -webkit-transform: rotateY(1566deg) translateZ(32.36068px);
+            transform: rotateY(1566deg) translateZ(32.36068px);
+  }
+  .DNA :nth-child(12) {
+    -webkit-transform: rotateY(1584deg) translateZ(23.51141px);
+            transform: rotateY(1584deg) translateZ(23.51141px);
+  }
+  .DNA :nth-child(11) {
+    -webkit-transform: rotateY(1602deg) translateZ(12.36068px);
+            transform: rotateY(1602deg) translateZ(12.36068px);
+  }
+  .DNA :nth-child(10) {
+    -webkit-transform: rotateY(1620deg) translateZ(0px);
+            transform: rotateY(1620deg) translateZ(0px);
+  }
+  .DNA :nth-child(9) {
+    -webkit-transform: rotateY(1638deg) translateZ(-12.36068px);
+            transform: rotateY(1638deg) translateZ(-12.36068px);
+  }
+  .DNA :nth-child(8) {
+    -webkit-transform: rotateY(1656deg) translateZ(-23.51141px);
+            transform: rotateY(1656deg) translateZ(-23.51141px);
+  }
+  .DNA :nth-child(7) {
+    -webkit-transform: rotateY(1674deg) translateZ(-32.36068px);
+            transform: rotateY(1674deg) translateZ(-32.36068px);
+  }
+  .DNA :nth-child(6) {
+    -webkit-transform: rotateY(1692deg) translateZ(-38.04226px);
+            transform: rotateY(1692deg) translateZ(-38.04226px);
+  }
+  .DNA :nth-child(5) {
+    -webkit-transform: rotateY(1710deg) translateZ(-40.0px);
+            transform: rotateY(1710deg) translateZ(-40.0px);
+  }
+  .DNA :nth-child(4) {
+    -webkit-transform: rotateY(1728deg) translateZ(-38.04224px);
+            transform: rotateY(1728deg) translateZ(-38.04224px);
+  }
+  .DNA :nth-child(3) {
+    -webkit-transform: rotateY(1746deg) translateZ(-32.3606px);
+            transform: rotateY(1746deg) translateZ(-32.3606px);
+  }
+  .DNA :nth-child(2) {
+    -webkit-transform: rotateY(1764deg) translateZ(-23.51111px);
+            transform: rotateY(1764deg) translateZ(-23.51111px);
+  }
+  .DNA :nth-child(1) {
+    -webkit-transform: rotateY(1782deg) translateZ(-12.35966px);
+            transform: rotateY(1782deg) translateZ(-12.35966px);
+  }
+  .btn {
+    font-size: 4vw;
+    border: #EEB938 4px double;
+    border-radius: 4px;
+  }
+  @-webkit-keyframes dna_move {
+    from {
+      -webkit-transform: translateX(-50%) rotateY(0) translateY(0);
+              transform: translateX(-50%) rotateY(0) translateY(0);
+    }
+    to {
+      -webkit-transform: translateX(-50%) rotateY(-1800deg) translateY(500vw);
+              transform: translateX(-50%) rotateY(-1800deg) translateY(500vw);
+    }
+  }
+  @keyframes dna_move {
+    from {
+      -webkit-transform: translateX(-50%) rotateY(0) translateY(0);
+              transform: translateX(-50%) rotateY(0) translateY(0);
+    }
+    to {
+      -webkit-transform: translateX(-50%) rotateY(-1800deg) translateY(500vw);
+              transform: translateX(-50%) rotateY(-1800deg) translateY(500vw);
+    }
+  }
+}
+/*# sourceMappingURL=style.css.map */
