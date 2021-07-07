@@ -1,5 +1,6 @@
 $bg_color: #2A2AE9;
-$btn_color: #FF5691;
+$primary_color: #FF4988;
+$btn_color: #FF4988;
 // $perspective: 1000px;
 // $perspective: 0;
 
@@ -140,14 +141,15 @@ $depth: 120px;
 	display: table;
 	font-family: "Noto Serif TC", Courier, monospace;
 	font-weight: bold;
+	font-style: italic;
 	color: $bg_color;
 	-webkit-text-stroke: 2px $btn_color;
-	border: $btn_color 6px double;
+	// border: $btn_color 6px double;
 	border-radius: 6px;
 	padding: 0 20px 4px;
-	margin: 16px auto;
+	margin: 12px auto;
 	font-size: $imgH - 1vw;
-	background-color: $bg_color;
+	// background-color: $bg_color;
 	opacity: .8;
 	transition: opacity .5s;
 
@@ -156,10 +158,6 @@ $depth: 120px;
     0 0 10px rgba(255, 97, 196, .2),
     0 0 21px rgba(255, 97, 196, .2);
 	
-	box-shadow:
-	0 0 7px rgba(255, 97, 196, .5),
-    0 0 10px rgba(255, 97, 196, .5),
-    0 0 21px rgba(255, 97, 196, .5);
 
 	&:hover {
 		cursor: pointer;
@@ -167,13 +165,13 @@ $depth: 120px;
 	}
 }
 .title {
-	opacity: .9;
+	// opacity: .9;
 	margin: 64px 0;
 	font-family: "Noto Serif TC", Courier, monospace;
 	font-weight: bold;
 	font-size: 5vw;
 	color: $bg_color;
-	-webkit-text-stroke: 2px #FF4988;
+	-webkit-text-stroke: 2px $primary_color;
 }
 
 @media (max-width: 769px) {
@@ -200,8 +198,9 @@ $depth: 120px;
 		font-size: $imgH - 1vw;
 		border-radius: 2px;
 		padding: 0 10px 2px;
+		margin: 8px auto;
 		-webkit-text-stroke: 1px $btn_color;
-		border: $btn_color 4px double;
+		// border: $btn_color 4px double;
 	}
 	.title {
 		font-size: 9vw;
