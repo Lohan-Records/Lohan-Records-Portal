@@ -1,6 +1,6 @@
 $bg_color: #2A2AE9;
-$primary_color: #FF4988;
-$btn_color: #FF4988;
+$primary_color: #DF336E;
+$btn_color: #FF487D;
 // $perspective: 1000px;
 // $perspective: 0;
 
@@ -143,9 +143,10 @@ $depth: 120px;
 	font-weight: bold;
 	font-style: italic;
 	color: $bg_color;
+	background-color: $bg_color;
 	-webkit-text-stroke: 2px $btn_color;
 	// border: $btn_color 6px double;
-	border-radius: 6px;
+	border-radius: 24px;
 	padding: 0 20px 4px;
 	margin: 12px auto;
 	font-size: $imgH - 1vw;
@@ -171,7 +172,7 @@ $depth: 120px;
 	font-weight: bold;
 	font-size: 5vw;
 	color: $bg_color;
-	-webkit-text-stroke: 2px $primary_color;
+	-webkit-text-stroke: 3px $primary_color;
 }
 
 @media (max-width: 769px) {
@@ -196,10 +197,11 @@ $depth: 120px;
 	}
 	.btn {
 		font-size: $imgH - 1vw;
-		border-radius: 2px;
+		border-radius: 6px;
 		padding: 0 10px 2px;
 		margin: 8px auto;
 		-webkit-text-stroke: 1px $btn_color;
+		opacity: .9;
 		// border: $btn_color 4px double;
 	}
 	.title {
