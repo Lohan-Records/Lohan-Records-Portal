@@ -6,7 +6,6 @@ html, body {
 body {
   background: #2A2AE9;
   text-align: center;
-  display: none;
 }
 
 a {
@@ -1093,6 +1092,10 @@ a {
   color: #2A2AE9;
   -webkit-text-stroke: 3px #DF429E;
   text-shadow: 1px 1px black;
+}
+
+.outter {
+  display: none;
 }
 
 @media (max-width: 769px) {
