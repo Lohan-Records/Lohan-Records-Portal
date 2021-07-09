@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="{{ asset("css/style.css") }}">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- google font Noto Serif TC -->
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
 	<meta name="description" content="Lohan Records 羅漢果黑膠選片" />
 </head>
 <body>
-	
+
 	<div class="box">
 		<div class="title">羅漢果黑膠選片公司</div>
 		<!-- <a class="btn" href=""https://shopee.tw/tw1775_31625>蝦皮賣場</a> -->
@@ -19,255 +19,256 @@
 		<a class="btn" href="http://qazwsc13.weebly.com">ᐊ 千萬不要亂按 ᐅ</a>
 	</div>
 	<div class="DNA">
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
 		<img src="logo/速度感logoWhite.png" alt="">
-		
+
 	</div>
-		
+
 </body>
 
 <script>
 	$(document).ready(function() {
 		// $('.outter').fadeIn(1600);
 	});
-	
+
 	let startPos = $("#0");
 	let inputPos = $("input");
 
