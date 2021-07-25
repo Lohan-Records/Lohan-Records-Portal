@@ -11,44 +11,56 @@
 	<meta name="description" content="Lohan Records 羅漢果黑膠選片" />
 </head>
 <body>
-	<div class="outter">
+	<div class="central">
+		<div class="title">羅漢果黑膠選片公司</div>
+		
+		<!-- <div class="carousel">
+			<div class="product">
+				<img id="product-1" class="active" src="src/product/life.jpg" alt="">
+				<img id="product-2" src="src/product/egg.jpg" alt="">
+				<img id="product-3" src="src/product/immature.jpg" alt="">
+				<img id="product-4" src="src/product/shell.jpg" alt="">
+				<img id="product-5" src="src/product/girl-1.jpg" alt="">
+				<img id="product-6" src="src/product/girl-2.jpg" alt="">
+				<img id="product-7" src="src/product/boy.jpg" alt="">
+				<img id="product-8" src="src/product/doctor.jpg" alt="">
+			</div>
+			<div class="thumb">
+				<img id="thumb-1" class="active" src="src/product/life.jpg" alt="">
+				<img id="thumb-2" src="src/product/egg.jpg" alt="">
+				<img id="thumb-3" src="src/product/immature.jpg" alt="">
+				<img id="thumb-4" src="src/product/shell.jpg" alt="">
+				<img id="thumb-5" src="src/product/girl-1.jpg" alt="">
+				<img id="thumb-6" src="src/product/girl-2.jpg" alt="">
+				<img id="thumb-7" src="src/product/boy.jpg" alt="">
+				<img id="thumb-8" src="src/product/doctor.jpg" alt="">
+			</div>
+		</div> -->
 
-		<div class="box">
-			<div class="title">羅漢果黑膠選片公司</div>
-			<!-- <a class="btn" href=""https://shopee.tw/tw1775_31625>蝦皮賣場</a> -->
-			<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc60yOSI9de75gDTZhZsqDamSLwZB1Ecb5y1TvJXjAJBGFszw/viewform">ᐊ 前往預購頁面 ᐅ</a>
-			<a class="btn" href="http://qazwsc13.weebly.com">ᐊ 千萬不要亂按 ᐅ</a>
-		</div>
+		<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc60yOSI9de75gDTZhZsqDamSLwZB1Ecb5y1TvJXjAJBGFszw/viewform">ᐊ 前往預購頁面 ᐅ</a>
+		<a class="btn" href="http://qazwsc13.weebly.com">ᐊ 千萬不要亂按 ᐅ</a>
 
-		<div class="DNA">
-			<!-- jquery append img -->
-		</div>
+	</div>
 
-	</div>	
+	<div class="DNA">
+		<!-- jquery append img -->
+	</div>
+
 </body>
 
 <script>
 	$(document).ready(function() {
-		$(".outter").fadeIn(1600);
-	});
-	const dna_len = 200;
+		// carousel
+		$(".thumb img").click(function() {
+			$("*").removeClass("active")
+			$("#product-" + $(this).attr("id").split("-")[1]).addClass("active");
+			$(this).addClass("active")
+
+		})
+	})
+	const dna_len = 200
 	for(var i = 0; i < dna_len; i++) {
-		$(".DNA").append('<img src="logo/速度感logoWhite.png" alt="">');
+		$(".DNA").append('<img src="src/logo/速度感logoWhite.png" alt="">')
 	}
-	
-	// let startPos = $("#0");
-	// let inputPos = $("input");
-	// let start = $(".start");
-	// start.click(function() {
-	// 	$(".intro").hide(400, function() {
-	// 		$(".inputBox").slideDown(800, function() {
-	// 			// Game Start !!!
-	// 			startPos.focus();
-	// 			// for mobile
-	// 			// startPos.trigger('touchstart');
-	// 			gamePlay(startPos, inputPos, inputDNA, rotateDeg, depth);
-	// 		});
-	// 	});
-	// });
 </script>
 </html>
