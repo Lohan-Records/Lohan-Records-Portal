@@ -1,0 +1,80 @@
+@import "dna";
+@import "carousel";
+
+$bg_color: #2a2ae9;
+$primary_color: #df429e;
+$btn_color: #ff4ab4;
+
+html {
+  // for safari on iOS15
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  height: 130vh;
+  // top: 0;
+  background-color: black;
+  text-align: center;
+  // background-image: url(src/grain.png), linear-gradient(0deg, rgba(9,0,164,1) 0%, rgba(42,42,233,1) 58%, rgba(0,123,214,1) 100%);
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.logo {
+  width: 12vw;
+}
+
+.central {
+  padding-top: 32px;
+  position: absolute;
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%) translateZ(800px);
+  // for iOS: translateZ > z-index;
+}
+
+@keyframes link_twink {
+  5% {
+    filter: none;
+  }
+  10% {
+    filter: drop-shadow(0 0 10px hsl(320, 50%, 90%));
+  }
+  15% {
+    filter: none;
+  }
+  20% {
+    filter: drop-shadow(0 0 10px hsl(320, 50%, 90%));
+  }
+}
+
+#shopee_link {
+  margin-top: 12px;
+  transition: filter 0;
+  filter: drop-shadow(0 0 20px hsl(320, 60%, 90%));
+  animation: link_twink 4s infinite 2s forwards;
+
+  img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 769px) {
+
+  .logo {
+    width: 32vw;
+  }
+  
+  #shopee_link {
+    margin-top: 24px;
+    
+    img {
+      width: 180px;
+    }
+  }
+}

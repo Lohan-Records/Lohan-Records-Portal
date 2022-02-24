@@ -1,0 +1,135 @@
+$pi: 3.14159265359;
+$_precision: 10;
+
+@function pow($base, $exp) {
+  $value: $base;
+  @if $exp > 1 {
+    @for $i from 2 through $exp {
+      $value: $value * $base;
+    }
+  }
+  @if $exp < 1 {
+    @for $i from 0 through -$exp {
+      $value: $value / $base;
+    }
+  }
+  @return $value;
+}
+
+@function fact($num) {
+  $fact: 1;
+  @if $num > 0 {
+    @for $i from 1 through $num {
+      $fact: $fact * $i;
+    }
+  }
+  @return $fact;
+}
+
+@function _to_unitless_rad($angle) {
+  @if unit($angle) == "deg" {
+    $angle: $angle / 180deg * $pi;
+  }
+  @if unit($angle) == "rad" {
+    $angle: $angle / 1rad;
+  }
+  @return $angle;
+}
+
+@function sin($angle) {
+  $a: _to_unitless_rad($angle);
+  $sin: $a;
+  @for $n from 1 through $_precision {
+    $sin: $sin + (pow(-1, $n) / fact(2 * $n + 1)) * pow($a, (2 * $n + 1));
+  }
+  @return $sin;
+}
+// END sin
+
+// DNA
+$n_of_children: 50;
+$dnaH: 5vw;
+$imgH: 4vw;
+// rotate_deg: can divide 360
+$rotate_deg: 12deg;
+// depth: can devide by (360deg / rotate_deg)
+$depth: 120px;
+
+@mixin dna3D($_n_of_children, $_rotate_deg, $_depth) {
+  $i: 1;
+  @for $child from $_n_of_children to 1 {
+    .dna_cell:nth-child(#{$child - 1}) {
+      transform: rotateY($_rotate_deg * $i)
+        translateZ(sin($_rotate_deg * $i % 360) * $_depth);
+    }
+    $i: $i + 1;
+  }
+}
+
+.DNA {
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-style: preserve-3d; // most important!
+  font-weight: bold;
+  font-family: Courier New, Courier, monospace;
+  @include dna3D($n_of_children, $rotate_deg, $depth);
+  animation: dna_move #{$n_of_children}s linear infinite;
+  // animation: dna_move 30s linear infinite;
+
+  img {
+    width: 50%;
+    height: $imgH;
+    padding: $dnaH - $imgH;
+    opacity: 0.3;
+  }
+}
+
+@mixin dna_anime($_n_of_children, $_rotate_deg, $_dnaH) {
+
+  @keyframes dna_move {
+    0% {
+      transform: translateX(-50%) rotateY(0) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) rotateY(-$_n_of_children * $_rotate_deg)
+        translateY($_n_of_children / 2 * $_dnaH);
+    }
+    100% {
+      transform: translateX(-50%) rotateY(0) translateY(0);
+    }
+  }
+}
+
+@include dna_anime($n_of_children, $rotate_deg, $dnaH);
+
+@media (max-width: 769px) {
+  body {
+    padding-top: 72px;
+    perspective: 5000px;
+  }
+
+  $dnaH: 7vw;
+  $imgH: 6vw;
+  // rotate_deg: can divide 360
+  $rotate_deg: 18deg;
+  // depth: can devide by (360deg / rotate_deg)
+  $depth: 40px;
+
+  .DNA {
+    @include dna3D($n_of_children, $rotate_deg, $depth);
+    animation: dna_move #{$n_of_children}s linear infinite;
+
+    img {
+      width: 70%;
+      height: $imgH;
+      padding: $dnaH - $imgH;
+      opacity: 0.4;
+    }
+  }
+
+  @include dna_anime($n_of_children, $rotate_deg, $dnaH);
+}
+// DNA end
