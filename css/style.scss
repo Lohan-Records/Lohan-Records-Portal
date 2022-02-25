@@ -13,7 +13,7 @@ html {
 body {
   overflow-x: hidden;
   margin: 0;
-  height: 130vh;
+  height: 110vh;
   // top: 0;
   background-color: black;
   text-align: center;
@@ -21,20 +21,22 @@ body {
 }
 
 a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 
 .logo {
-  width: 12vw;
+  width: 180px;
 }
 
 .central {
+  z-index: 999;
   padding-top: 32px;
   position: absolute;
+  width: 100%;
   left: 50%;
-  z-index: 999;
-  transform: translateX(-50%) translateZ(800px);
+  top: 55%;
+  transform: translate3d(-50%, -50%, 800px);
   // for iOS: translateZ > z-index;
 }
 
@@ -66,6 +68,11 @@ a {
 
 @media (max-width: 769px) {
 
+  .central {
+    top: 45%;
+    transform: translate3d(-50%, -50%, 800px);
+  }
+
   .logo {
     width: 32vw;
   }
@@ -77,4 +84,13 @@ a {
       width: 180px;
     }
   }
+}
+
+@media (max-width: 450px) {
+
+  .central {
+    top: 7%;
+    transform: translate3d(-50%, 0, 800px);
+  }
+  
 }

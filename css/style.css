@@ -652,6 +652,7 @@
 }
 
 .carousel_button {
+  padding: 16px;
   z-index: 9999;
   position: absolute;
   top: 50%;
@@ -672,8 +673,8 @@
 }
 
 .carousel_button {
-  width: 6vw;
-  height: 6vw;
+  width: 64px;
+  height: 64px;
 }
 
 .previous_button {
@@ -784,14 +785,14 @@
             transform: rotateY(324deg) translateZ(369px);
   }
   .carousel_button {
-    width: 9vw;
-    height: 9vw;
+    width: 32px;
+    height: 32px;
   }
   .previous_button {
-    left: -5%;
+    left: -8%;
   }
   .next_button {
-    right: -5%;
+    right: -8%;
   }
 }
 
@@ -802,27 +803,29 @@ html {
 body {
   overflow-x: hidden;
   margin: 0;
-  height: 130vh;
+  height: 110vh;
   background-color: black;
   text-align: center;
 }
 
 a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 
 .logo {
-  width: 12vw;
+  width: 180px;
 }
 
 .central {
+  z-index: 999;
   padding-top: 32px;
   position: absolute;
+  width: 100%;
   left: 50%;
-  z-index: 999;
-  -webkit-transform: translateX(-50%) translateZ(800px);
-          transform: translateX(-50%) translateZ(800px);
+  top: 55%;
+  -webkit-transform: translate3d(-50%, -50%, 800px);
+          transform: translate3d(-50%, -50%, 800px);
 }
 
 @-webkit-keyframes link_twink {
@@ -880,6 +883,11 @@ a {
 }
 
 @media (max-width: 769px) {
+  .central {
+    top: 45%;
+    -webkit-transform: translate3d(-50%, -50%, 800px);
+            transform: translate3d(-50%, -50%, 800px);
+  }
   .logo {
     width: 32vw;
   }
@@ -888,6 +896,14 @@ a {
   }
   #shopee_link img {
     width: 180px;
+  }
+}
+
+@media (max-width: 450px) {
+  .central {
+    top: 7%;
+    -webkit-transform: translate3d(-50%, 0, 800px);
+            transform: translate3d(-50%, 0, 800px);
   }
 }
 /*# sourceMappingURL=style.css.map */

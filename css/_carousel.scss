@@ -81,6 +81,7 @@ $cell_count: 10;
 @include carousel(400px, 12px);
 
 .carousel_button {
+  padding: 16px;
   z-index: 9999;
   position: absolute;
   top: 50%;
@@ -114,9 +115,9 @@ $cell_count: 10;
   }
 }
 
-@include carousel_button(6vw, -40%);
+@include carousel_button(64px, -40%);
 
 @media (max-width: 769px) {
   @include carousel(240px, 8px);
-  @include carousel_button(9vw, -5%);
+  @include carousel_button(32px, -8%);
 }
