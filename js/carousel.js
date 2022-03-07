@@ -52,6 +52,7 @@ nextButton.addEventListener("click", next);
 document.onkeydown = function (e) {
   switch (e.code) {
     case "ArrowLeft":
+      $(".previous_button").trigger("mouseenter");
       previous();
       break;
     case "ArrowRight":

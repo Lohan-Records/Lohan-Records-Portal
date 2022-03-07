@@ -22,7 +22,7 @@ $cell_count: 10;
     height: 100%;
     transform-style: preserve-3d;
     transform: translateZ(-788px);
-    transition: transform 1s;
+    transition: transform .5s;
   }
   
   .carousel_cell {
@@ -78,16 +78,13 @@ $cell_count: 10;
   }
 }
 
-@include carousel(400px, 12px);
-
 .carousel_button {
   padding: 16px;
   z-index: 9999;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) translateZ(100px);
-  opacity: 0.3;
-  transition: opacity 0.5s;
+  opacity: 0.6;
 
   img {
     width: 100%;
@@ -96,7 +93,9 @@ $cell_count: 10;
 
   &:hover {
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 1;
+    filter: drop-shadow(0 0 5px #7de7fa)
+             drop-shadow(0 0 8px #fff);
   }
 }
 
@@ -115,9 +114,15 @@ $cell_count: 10;
   }
 }
 
-@include carousel_button(64px, -40%);
+@include carousel(500px, 16px);
+@include carousel_button(56px, -30%);
+
+@media (max-width: 1900px) {
+  @include carousel(400px, 12px);
+  @include carousel_button(40px, -30%);
+}
 
 @media (max-width: 769px) {
   @include carousel(240px, 8px);
-  @include carousel_button(32px, -8%);
+  @include carousel_button(24px, -12%);
 }

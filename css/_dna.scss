@@ -1,5 +1,6 @@
 $pi: 3.14159265359;
 $_precision: 10;
+$loading_time: 3s;
 
 @function pow($base, $exp) {
   $value: $base;
@@ -76,8 +77,8 @@ $depth: 120px;
   font-weight: bold;
   font-family: Courier New, Courier, monospace;
   @include dna3D($n_of_children, $rotate_deg, $depth);
-  animation: dna_move #{$n_of_children}s linear infinite;
-  // animation: dna_move 30s linear infinite;
+  animation: dna_move #{$n_of_children}s linear $loading_time infinite;
+  // animation: dna_move 10s linear infinite;
 
   img {
     width: 50%;
@@ -120,7 +121,7 @@ $depth: 120px;
 
   .DNA {
     @include dna3D($n_of_children, $rotate_deg, $depth);
-    animation: dna_move #{$n_of_children}s linear infinite;
+    animation: dna_move #{$n_of_children}s linear $loading_time infinite;
 
     img {
       width: 70%;
