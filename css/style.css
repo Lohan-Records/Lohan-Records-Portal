@@ -1009,14 +1009,14 @@ a {
 
 .loading #logo_word {
   width: 130px;
-  -webkit-animation: loading 3s cubic-bezier(1, 0.4, 0.48, 0.99) both;
-          animation: loading 3s cubic-bezier(1, 0.4, 0.48, 0.99) both;
+  -webkit-animation: loading 3s cubic-bezier(1, 0.4, 0.48, 0.99) 0.3s both;
+          animation: loading 3s cubic-bezier(1, 0.4, 0.48, 0.99) 0.3s both;
 }
 
 .loading #logo_ring {
   width: 195px;
-  -webkit-animation: loading_reverse 3s cubic-bezier(1, 0.4, 0.48, 0.99) both;
-          animation: loading_reverse 3s cubic-bezier(1, 0.4, 0.48, 0.99) both;
+  -webkit-animation: loading_reverse 3s cubic-bezier(1, 0.4, 0.48, 0.99) 0.3s both;
+          animation: loading_reverse 3s cubic-bezier(1, 0.4, 0.48, 0.99) 0.3s both;
 }
 
 @-webkit-keyframes link_twink {
