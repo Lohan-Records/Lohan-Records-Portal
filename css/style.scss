@@ -62,23 +62,9 @@ a {
   }
 }
 
-@keyframes loading_fadeout {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    // height: 0;
-    opacity: 0;
-    z-index: -9999;
-    transform: translateZ(-9999px);
-  }
-}
-
 .loading {
   $loading_img_size: 100px;
   
-  // display: none;
   z-index: 9999;
   transform: translateZ(900px);
   background-color: hsl(40, 30%, 85%);
@@ -86,12 +72,11 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 200vh;
-  // animation: loading_fadeout .5s ease $loading_time both;  
+  height: 100vh;
 
   img {
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -102,12 +87,12 @@ a {
 
   #logo_word {
     width: 1.3 * $loading_img_size;
-    animation: loading $loading_time cubic-bezier(1,.4,.48,.99);
+    animation: loading $loading_time cubic-bezier(1,.4,.48,.99) both;
   }
   
   #logo_ring {
     width: 1.95 * $loading_img_size;
-    animation: loading_reverse $loading_time cubic-bezier(1,.4,.48,.99);
+    animation: loading_reverse $loading_time cubic-bezier(1,.4,.48,.99) both;
   }
 }
 

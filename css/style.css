@@ -983,30 +983,6 @@ a {
   }
 }
 
-@-webkit-keyframes loading_fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    z-index: -9999;
-    -webkit-transform: translateZ(-9999px);
-            transform: translateZ(-9999px);
-  }
-}
-
-@keyframes loading_fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    z-index: -9999;
-    -webkit-transform: translateZ(-9999px);
-            transform: translateZ(-9999px);
-  }
-}
-
 .loading {
   z-index: 9999;
   -webkit-transform: translateZ(900px);
@@ -1016,12 +992,12 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 200vh;
+  height: 100vh;
 }
 
 .loading img {
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1033,14 +1009,14 @@ a {
 
 .loading #logo_word {
   width: 130px;
-  -webkit-animation: loading 3s cubic-bezier(1, 0.4, 0.48, 0.99);
-          animation: loading 3s cubic-bezier(1, 0.4, 0.48, 0.99);
+  -webkit-animation: loading 3s cubic-bezier(1, 0.4, 0.48, 0.99) both;
+          animation: loading 3s cubic-bezier(1, 0.4, 0.48, 0.99) both;
 }
 
 .loading #logo_ring {
   width: 195px;
-  -webkit-animation: loading_reverse 3s cubic-bezier(1, 0.4, 0.48, 0.99);
-          animation: loading_reverse 3s cubic-bezier(1, 0.4, 0.48, 0.99);
+  -webkit-animation: loading_reverse 3s cubic-bezier(1, 0.4, 0.48, 0.99) both;
+          animation: loading_reverse 3s cubic-bezier(1, 0.4, 0.48, 0.99) both;
 }
 
 @-webkit-keyframes link_twink {
