@@ -2,9 +2,6 @@
 @import "carousel";
 
 $loading_time: 3s;
-// $bg_color: #2a2ae9;
-// $primary_color: #df429e;
-// $btn_color: #ff4ab4;
 
 html {
   // for safari on iOS15
@@ -15,10 +12,8 @@ body {
   overflow-x: hidden;
   margin: 0;
   height: 110vh;
-  // top: 0;
   background-color: black;
   text-align: center;
-  // background-image: url(src/grain.png), linear-gradient(0deg, rgba(9,0,164,1) 0%, rgba(42,42,233,1) 58%, rgba(0,123,214,1) 100%);
 }
 
 a {
@@ -32,13 +27,12 @@ a {
 
 .central {
   z-index: 999;
-  padding-top: 32px;
   position: absolute;
   width: 100%;
   left: 50%;
   top: 53%;
-  transform: translate3d(-50%, -50%, 800px);
   // for iOS: translateZ > z-index;
+  transform: translate3d(-50%, -50%, 800px);
 }
 
 @keyframes loading {
@@ -76,7 +70,7 @@ a {
 
   img {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
