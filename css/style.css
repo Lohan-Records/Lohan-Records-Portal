@@ -558,6 +558,13 @@
           filter: drop-shadow(0 0 5px #7de7fa) drop-shadow(0 0 8px #fff);
 }
 
+.carousel_button.active, .carousel_button:active {
+  cursor: pointer;
+  opacity: 1;
+  -webkit-filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 5px #fff) drop-shadow(0 0 8px #7de7fa) drop-shadow(0 0 11px #7de7fa);
+          filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 5px #fff) drop-shadow(0 0 8px #7de7fa) drop-shadow(0 0 11px #7de7fa);
+}
+
 .scene {
   width: 500px;
   height: 500px;
@@ -1091,7 +1098,7 @@ a {
 
 @media (max-width: 450px) {
   .central {
-    top: 7%;
+    top: 10%;
     -webkit-transform: translate3d(-50%, 0, 800px);
             transform: translate3d(-50%, 0, 800px);
   }

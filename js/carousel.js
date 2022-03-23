@@ -49,17 +49,42 @@ prevButton.addEventListener("click", previous);
 var nextButton = document.querySelector(".next_button");
 nextButton.addEventListener("click", next);
 
+// left & right event
+const soundL = new Audio("src/sound/kick-soft-bright-2.wav");
+const soundR = new Audio("src/sound/kick-soft-bright-3.wav");
 document.onkeydown = function (e) {
   switch (e.code) {
+    
     case "ArrowLeft":
-      $(".previous_button").trigger("mouseenter");
+      $(".previous_button").addClass("active");
+      soundL.pause();
+      soundL.currentTime = 0;
+      soundL.play();
       previous();
       break;
+      
     case "ArrowRight":
+      $(".next_button").addClass("active");
+      soundR.pause();
+      soundR.currentTime = 0;
+      soundR.play();
       next();
       break;
   }
 };
+
+document.onkeyup = function (e) {
+  var delay = 100;
+  switch (e.code) {
+    case "ArrowLeft":
+      $(".previous_button").removeClass("active");
+      break;
+    case "ArrowRight":
+      $(".next_button").removeClass("active");
+      break;
+  }
+};
+
 
 function changeCarousel() {
   theta = 360 / cellCount;

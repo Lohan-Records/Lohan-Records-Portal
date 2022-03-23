@@ -97,6 +97,15 @@ $cell_count: 10;
     filter: drop-shadow(0 0 5px #7de7fa)
              drop-shadow(0 0 8px #fff);
   }
+
+  &.active, &:active {
+    cursor: pointer;
+    opacity: 1;
+    filter: drop-shadow(0 0 3px #fff)
+             drop-shadow(0 0 5px #fff)
+             drop-shadow(0 0 8px #7de7fa)
+             drop-shadow(0 0 11px #7de7fa);
+  }
 }
 
 @mixin carousel_button($btn_size, $positionY) {

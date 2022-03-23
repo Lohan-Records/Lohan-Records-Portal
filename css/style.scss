@@ -58,6 +58,7 @@ a {
 
 .loading {
   $loading_img_size: 100px;
+  // display: none;
   
   z-index: 9999;
   transform: translateZ(900px);
@@ -139,7 +140,7 @@ a {
 @media (max-width: 450px) {
 
   .central {
-    top: 7%;
+    top: 10%;
     transform: translate3d(-50%, 0, 800px);
   }
   
