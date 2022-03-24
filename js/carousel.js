@@ -51,14 +51,10 @@ nextButton.addEventListener("click", next);
 
 // left & right event
 function playSound(sound) {
-  var allAudio = document.getElementsByTagName('audio');
-  var audioList = Array.prototype.slice.call(allAudio);
-
-  audioList.forEach(audio => {
-    audio.pause();
-    audio.currentTime = 0;
+  $('audio').each(function(){
+    this.pause();
+    this.currentTime = 0;
   });
-
   sound.play();
 }
 
@@ -66,13 +62,13 @@ const D = document.getElementById("D");
 const DD = document.getElementById("DD");
 const F = document.getElementById("FF");
 const G = document.getElementById("G");
-var soundList = [G, D, D, DD, D, FF, G];
+const soundList = [G, D, D, DD, D, FF, G];
+
 var index = 0;
+const soundLen = soundList.length;
 
 document.onkeydown = function (e) {
-  if (index > 6)
-    index -= 7;
-  // console.log(index);
+  if (index >= soundLen) index -= soundLen;
 
   switch (e.code) {
     case "ArrowLeft":
@@ -92,7 +88,6 @@ document.onkeydown = function (e) {
 };
 
 document.onkeyup = function (e) {
-  var delay = 100;
   switch (e.code) {
     case "ArrowLeft":
       $(".previous_button").removeClass("active");
@@ -103,13 +98,8 @@ document.onkeyup = function (e) {
   }
 };
 
-
 function changeCarousel() {
   theta = 360 / cellCount;
   radius = Math.round(cellWidth / 2 / Math.tan(Math.PI / cellCount));
   rotateCarousel();
 }
-
-
-// set initials
-// changeCarousel();
