@@ -50,24 +50,42 @@ var nextButton = document.querySelector(".next_button");
 nextButton.addEventListener("click", next);
 
 // left & right event
-const soundL = new Audio("src/sound/kick-soft-bright-2.wav");
-const soundR = new Audio("src/sound/kick-soft-bright-3.wav");
+function playSound(sound) {
+  var allAudio = document.getElementsByTagName('audio');
+  var audioList = Array.prototype.slice.call(allAudio);
+
+  audioList.forEach(audio => {
+    audio.pause();
+    audio.currentTime = 0;
+  });
+
+  sound.play();
+}
+
+const D = document.getElementById("D");
+const DD = document.getElementById("DD");
+const F = document.getElementById("FF");
+const G = document.getElementById("G");
+var soundList = [G, D, D, DD, D, FF, G];
+var index = 0;
+
 document.onkeydown = function (e) {
+  if (index > 6)
+    index -= 7;
+  // console.log(index);
+  
   switch (e.code) {
-    
     case "ArrowLeft":
       $(".previous_button").addClass("active");
-      soundL.pause();
-      soundL.currentTime = 0;
-      soundL.play();
+      playSound(soundList[index]);
+      index++;
       previous();
       break;
       
     case "ArrowRight":
       $(".next_button").addClass("active");
-      soundR.pause();
-      soundR.currentTime = 0;
-      soundR.play();
+      playSound(soundList[index]);
+      index++;
       next();
       break;
   }
