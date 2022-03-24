@@ -86,15 +86,15 @@
   //<![CDATA[
     var loading_time = 3300;
     setTimeout(()=> { $(".loading").fadeOut(500); }, loading_time);
-    
+
     $(document).ready(function () {
     	changeCarousel();
     });
-    
+
     $(window).resize(function () {
     	changeCarousel();
     });
-    
+
     // append dna img
     const dna_len = 50;
     for (var i = 0; i < dna_len; i++) {
@@ -102,6 +102,7 @@
     	'<img class="dna_cell" src="src/logo/速度感logoWhite.png" alt="羅漢果黑膠選片公司">'
     	);
     }
+    console.log("test CICD");
   //]]>
 </script>
 </body>
