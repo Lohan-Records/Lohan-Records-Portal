@@ -22,7 +22,7 @@ jobs:
       PARENT_REPOSITORY: 'Lohan-Records/gate'
       CHECKOUT_BRANCH: 'main'
       PR_AGAINST_BRANCH: 'main'
-      OWNER: 'lohan'
+      OWNER: 'Lohan-Records'
 
     steps:
       ##########################
