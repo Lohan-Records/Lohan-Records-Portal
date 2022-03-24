@@ -12,7 +12,7 @@
 		-# favicon
 		%link(rel="shortcut icon" href="src/logo/favicon.ico" type="image/x-icon")/
 		%link(rel="apple-touch-icon" href="src/logo/favicon.png" sizes="128x128")/
-		
+
 		-# CSS
 		%link(rel="stylesheet" href="css/style.css")/
 
@@ -30,7 +30,7 @@
 		%meta(property="og:type" content="website")/
 		%meta{
 			property: "og:image",
-			content: "https://d1e9-114-33-29-10.ngrok.io/Lohan-Records-Portal/src/預覽-羅漢果黑膠選片.png",
+			content: "/src/預覽-羅漢果黑膠選片.png",
 		}
 
 
@@ -59,7 +59,7 @@
 				%img.logo(src="src/羅漢果.png" alt="羅漢果黑膠選片公司-logo")/
 			%div
 				%img.logo(src="src/lohan_records.png" alt="lohan_records")/
-			
+
 			-# carousel
 			.scene
 				.carousel
@@ -155,13 +155,13 @@
 
 
 		-# SCRIPT
-		%script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js") 
-		%script(src="js/carousel.js") 
+		%script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+		%script(src="js/carousel.js")
 
 		:javascript
 			var loading_time = 3300;
 			setTimeout(()=> { $(".loading").fadeOut(500); }, loading_time);
-			
+
 			$(document).ready(function () {
 				changeCarousel();
 			});
@@ -177,4 +177,3 @@
 				'<img class="dna_cell" src="src/logo/速度感logoWhite.png" alt="羅漢果黑膠選片公司">'
 				);
 			}
-		

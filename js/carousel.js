@@ -19,12 +19,12 @@ function rotateCarousel() {
   while (active_index <= 0) {
     active_index += 10;
   }
-  
+
   active_cell = document.querySelector(
     `.carousel_cell:nth-child(${active_index})`
   );
   // console.log(active_index);
-  
+
   other_cells = carousel.querySelectorAll(".carousel_cell");
   other_cells.forEach(cell => {
     cell.classList.remove("active");
@@ -73,7 +73,7 @@ document.onkeydown = function (e) {
   if (index > 6)
     index -= 7;
   // console.log(index);
-  
+
   switch (e.code) {
     case "ArrowLeft":
       $(".previous_button").addClass("active");
@@ -81,7 +81,7 @@ document.onkeydown = function (e) {
       index++;
       previous();
       break;
-      
+
     case "ArrowRight":
       $(".next_button").addClass("active");
       playSound(soundList[index]);
