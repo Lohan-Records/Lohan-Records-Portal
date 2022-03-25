@@ -990,7 +990,6 @@ a {
 }
 
 .loading {
-  display: none;
   z-index: 9999;
   -webkit-transform: translateZ(900px);
           transform: translateZ(900px);
