@@ -49,51 +49,110 @@ prevButton.addEventListener("click", previous);
 var nextButton = document.querySelector(".next_button");
 nextButton.addEventListener("click", next);
 
-// left & right event
-function playSound(sound) {
-  $('audio').each(function(){
-    this.pause();
-    this.currentTime = 0;
-  });
-  sound.play();
+
+/* ==================
+--- Sound Effects ---
+=================== */
+
+function soundPlay(sound) {
+  // $('audio').each(function () {
+  //   this.pause();
+  //   this.currentTime = 0;
+  // });
+  // sound.on({play: function() {
+    // sound.pause();
+    // sound.currentTime = 0;
+  // }});
+  // if (sound[0].currentTime > 0) {
+  // }
+  sound.trigger("pause");
+  sound[0].currentTime = 0;
+  // sound.play();
+  sound.trigger("play");
 }
 
-const D = document.getElementById("D");
-const DD = document.getElementById("DD");
-const F = document.getElementById("FF");
-const G = document.getElementById("G");
+function soundStop(sound) {
+  sound.pause();
+  sound.currentTime = 0;
+}
+
+// const D = document.getElementById("D");
+// const DD = document.getElementById("DD");
+// const F = document.getElementById("FF");
+// const G = document.getElementById("G");
+const D = $("#D");
+const DD = $("#DD");
+const FF = $("#FF");
+const G = $("#G");
 const soundList = [G, D, D, DD, D, FF, G];
 
 var index = 0;
 const soundLen = soundList.length;
 
-document.onkeydown = function (e) {
+document.onkeydown = (e) => {
   if (index >= soundLen) index -= soundLen;
 
-  switch (e.code) {
+  switch (e.key) {
     case "ArrowLeft":
       $(".previous_button").addClass("active");
-      playSound(soundList[index]);
+      soundPlay(soundList[index]);
       index++;
       previous();
       break;
 
     case "ArrowRight":
       $(".next_button").addClass("active");
-      playSound(soundList[index]);
+      soundPlay(soundList[index]);
       index++;
       next();
       break;
+
+    case "a":
+      var e = jQuery.Event("keydown");
+      var interval = 400;
+
+      e.key = "ArrowRight";
+      $("body").trigger(e);
+
+      setTimeout(()=> {
+        e.key = "ArrowLeft";
+        $("body").trigger(e);
+      }, interval);
+      setTimeout(()=> {
+        e.key = "ArrowLeft";
+        $("body").trigger(e);
+      }, interval*2);
+      setTimeout(()=> {
+        e.key = "ArrowRight";
+        $("body").trigger(e);
+      }, interval*3);
+      setTimeout(()=> {
+        e.key = "ArrowLeft";
+        $("body").trigger(e);
+      }, interval*4);
+      setTimeout(()=> {
+        e.key = "ArrowRight";
+        $("body").trigger(e);
+      }, interval*5);
+      setTimeout(()=> {
+        e.key = "ArrowRight";
+        $("body").trigger(e);
+      }, interval*6);
   }
 };
 
-document.onkeyup = function (e) {
-  switch (e.code) {
+document.onkeyup = (e) => {
+  switch (e.key) {
     case "ArrowLeft":
       $(".previous_button").removeClass("active");
+      // soundStop(soundList[index]);
+      // index++;
       break;
+
     case "ArrowRight":
       $(".next_button").removeClass("active");
+      // soundStop(soundList[index]);
+      // index++;
       break;
   }
 };

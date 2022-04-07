@@ -159,16 +159,13 @@
 		%script(src="js/carousel.js")
 
 		:javascript
+			// loading animation
 			var loading_time = 3300;
 			setTimeout(()=> { $(".loading").fadeOut(500); }, loading_time);
 
-			$(document).ready(function () {
-				changeCarousel();
-			});
-
-			$(window).resize(function () {
-				changeCarousel();
-			});
+			// set carousel
+			$(document).ready(changeCarousel);
+			$(window).resize(changeCarousel);
 
 			// append dna img
 			const dna_len = 50;
