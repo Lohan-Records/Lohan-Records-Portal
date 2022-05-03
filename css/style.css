@@ -605,6 +605,7 @@
 
 .carousel_cell img {
   width: 82%;
+  height: 82%;
   -webkit-transform: translateY(11.5%);
           transform: translateY(11.5%);
 }
@@ -730,6 +731,7 @@
   }
   .carousel_cell img {
     width: 82%;
+    height: 82%;
     -webkit-transform: translateY(11.5%);
             transform: translateY(11.5%);
   }
@@ -841,6 +843,7 @@
   }
   .carousel_cell img {
     width: 82%;
+    height: 82%;
     -webkit-transform: translateY(11.5%);
             transform: translateY(11.5%);
   }
