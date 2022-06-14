@@ -31,6 +31,7 @@ a {
   width: 100%;
   left: 50%;
   top: 50vh;
+  max-height: 90vh;
   // for iOS: translateZ > z-index;
   transform: translate3d(-50%, -50%, 800px);
 }
