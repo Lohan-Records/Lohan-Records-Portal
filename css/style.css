@@ -943,7 +943,7 @@ a {
   position: absolute;
   width: 100%;
   left: 50%;
-  top: 60%;
+  top: 50vh;
   -webkit-transform: translate3d(-50%, -50%, 800px);
           transform: translate3d(-50%, -50%, 800px);
 }
@@ -1093,11 +1093,6 @@ a {
 }
 
 @media (max-width: 769px) {
-  .central {
-    top: 45%;
-    -webkit-transform: translate3d(-50%, -50%, 800px);
-            transform: translate3d(-50%, -50%, 800px);
-  }
   .logo {
     width: 32vw;
   }
@@ -1109,14 +1104,6 @@ a {
   }
   .hint {
     display: none;
-  }
-}
-
-@media (max-width: 450px) {
-  .central {
-    top: 10%;
-    -webkit-transform: translate3d(-50%, 0, 800px);
-            transform: translate3d(-50%, 0, 800px);
   }
 }
 /*# sourceMappingURL=style.css.map */

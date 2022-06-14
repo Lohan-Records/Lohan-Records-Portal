@@ -30,7 +30,7 @@ a {
   position: absolute;
   width: 100%;
   left: 50%;
-  top: 60%;
+  top: 50vh;
   // for iOS: translateZ > z-index;
   transform: translate3d(-50%, -50%, 800px);
 }
@@ -82,12 +82,13 @@ a {
 
   #logo_word {
     width: 1.3 * $loading_img_size;
-    animation: loading $loading_time cubic-bezier(1,.4,.48,.99) .3s both;
+    animation: loading $loading_time cubic-bezier(1, 0.4, 0.48, 0.99) 0.3s both;
   }
 
   #logo_ring {
     width: 1.95 * $loading_img_size;
-    animation: loading_reverse $loading_time cubic-bezier(1,.4,.48,.99) .3s both;
+    animation: loading_reverse $loading_time cubic-bezier(1, 0.4, 0.48, 0.99)
+      0.3s both;
   }
 }
 
@@ -128,12 +129,6 @@ a {
 }
 
 @media (max-width: 769px) {
-
-  .central {
-    top: 45%;
-    transform: translate3d(-50%, -50%, 800px);
-  }
-
   .logo {
     width: 32vw;
   }
@@ -152,10 +147,4 @@ a {
 }
 
 @media (max-width: 450px) {
-
-  .central {
-    top: 10%;
-    transform: translate3d(-50%, 0, 800px);
-  }
-
 }
