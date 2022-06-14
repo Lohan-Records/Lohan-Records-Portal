@@ -948,12 +948,6 @@ a {
           transform: translate3d(-50%, -50%, 800px);
 }
 
-.hint {
-  color: white;
-  opacity: 0.3;
-  margin-top: 10rem;
-}
-
 @-webkit-keyframes loading {
   from {
     -webkit-transform: translate(-50%, -50%) rotate(0);
@@ -1086,6 +1080,12 @@ a {
 
 #shopee_link img {
   width: 250px;
+}
+
+.hint {
+  color: white;
+  opacity: 0.3;
+  margin-top: 10rem;
 }
 
 @media (max-width: 769px) {
