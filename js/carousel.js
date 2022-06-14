@@ -88,6 +88,10 @@ document.onkeydown = function (e) {
 
     case "Space":
       playSound(youSuffer);
+      // prevent space bar from scrolling page
+      if(e.target == document.body) {
+        e.preventDefault();
+      }
       break;
   }
 };
