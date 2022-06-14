@@ -118,9 +118,13 @@ a {
 }
 
 .hint {
+  display: block;
+  text-align: left;
   color: white;
   opacity: 0.3;
-  margin-top: 10rem;
+  position: fixed;
+  bottom: 0;
+  left: 1rem;
 }
 
 @media (max-width: 769px) {
@@ -140,6 +144,10 @@ a {
     img {
       width: 180px;
     }
+  }
+
+  .hint {
+    display: none;
   }
 }
 
