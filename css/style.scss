@@ -35,6 +35,12 @@ a {
   transform: translate3d(-50%, -50%, 800px);
 }
 
+.hint {
+  color: white;
+  opacity: 0.3;
+  margin-top: 10rem;
+}
+
 @keyframes loading {
   from {
     // rotate(0) for SAFARI

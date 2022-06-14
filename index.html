@@ -73,6 +73,11 @@
 <a href="https://shopee.tw/tw1775_31625" id="shopee_link" rel="noopener noreferrer" target="_blank">
 <img alt="蝦皮賣場＿羅漢果黑膠選片公司" src="src/button/選購酷的衣服.png" />
 </a>
+<p class="hint">
+電腦版網站：使用方向鍵瀏覽，以及按壓空白鍵獲得驚喜。
+<br />
+（若驚喜過度本公司不負任何責任）
+</p>
 </div>
 <div class="DNA">
 </div>
@@ -80,21 +85,22 @@
 <audio id="DD" src="src/sound/shepard-note-dd.mp3"></audio>
 <audio id="FF" src="src/sound/shepard-note-ff.mp3"></audio>
 <audio id="G" src="src/sound/shepard-note-g.mp3"></audio>
+<audio id="youSuffer" src="src/sound/youSuffer.mp3"></audio>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/carousel.js"></script>
 <script type="text/javascript">
   //<![CDATA[
     var loading_time = 3300;
     setTimeout(()=> { $(".loading").fadeOut(500); }, loading_time);
-
+    
     $(document).ready(function () {
     	changeCarousel();
     });
-
+    
     $(window).resize(function () {
     	changeCarousel();
     });
-
+    
     // append dna img
     const dna_len = 50;
     for (var i = 0; i < dna_len; i++) {
@@ -102,7 +108,6 @@
     	'<img class="dna_cell" src="src/logo/速度感logoWhite.png" alt="羅漢果黑膠選片公司">'
     	);
     }
-    console.log("Lohankha Forever");
   //]]>
 </script>
 </body>

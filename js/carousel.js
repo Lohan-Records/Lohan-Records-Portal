@@ -15,7 +15,7 @@ function rotateCarousel() {
 
   carousel.style.transform = `translateZ(-${radius}px) rotateY(${angle}deg)`;
 
-  active_index = selectedIndex % cellCount + 1;
+  active_index = (selectedIndex % cellCount) + 1;
   while (active_index <= 0) {
     active_index += 10;
   }
@@ -26,7 +26,7 @@ function rotateCarousel() {
   // console.log(active_index);
 
   other_cells = carousel.querySelectorAll(".carousel_cell");
-  other_cells.forEach(cell => {
+  other_cells.forEach((cell) => {
     cell.classList.remove("active");
   });
 
@@ -51,7 +51,7 @@ nextButton.addEventListener("click", next);
 
 // left & right event
 function playSound(sound) {
-  $('audio').each(function(){
+  $("audio").each(function () {
     this.pause();
     this.currentTime = 0;
   });
@@ -63,6 +63,7 @@ const DD = document.getElementById("DD");
 const F = document.getElementById("FF");
 const G = document.getElementById("G");
 const soundList = [G, D, D, DD, D, FF, G];
+const youSuffer = document.getElementById("youSuffer");
 
 var index = 0;
 const soundLen = soundList.length;
@@ -83,6 +84,10 @@ document.onkeydown = function (e) {
       playSound(soundList[index]);
       index++;
       next();
+      break;
+
+    case "Space":
+      playSound(youSuffer);
       break;
   }
 };
