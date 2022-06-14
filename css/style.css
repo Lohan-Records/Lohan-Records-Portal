@@ -302,8 +302,8 @@
             perspective: 5000px;
   }
   .DNA {
-    -webkit-animation: dna_move 100s linear 3s infinite;
-            animation: dna_move 100s linear 3s infinite;
+    -webkit-animation: dna_move 50s linear 3s infinite;
+            animation: dna_move 50s linear 3s infinite;
   }
   .DNA .dna_cell:nth-child(49) {
     -webkit-transform: rotateY(18deg) translateZ(12.36068px);
@@ -1105,6 +1105,12 @@ a {
   }
   .hint {
     display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .central {
+    top: 53vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
