@@ -87,7 +87,7 @@ document.onkeydown = function (e) {
       break;
 
     case "Space":
-      playSound(youSuffer);
+      youSuffer.play();
       // prevent space bar from scrolling page
       if(e.target == document.body) {
         e.preventDefault();
