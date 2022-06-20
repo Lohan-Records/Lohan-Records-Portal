@@ -15,7 +15,7 @@ function rotateCarousel() {
 
   carousel.style.transform = `translateZ(-${radius}px) rotateY(${angle}deg)`;
 
-  active_index = selectedIndex % cellCount + 1;
+  active_index = (selectedIndex % cellCount) + 1;
   while (active_index <= 0) {
     active_index += 10;
   }
@@ -26,7 +26,7 @@ function rotateCarousel() {
   // console.log(active_index);
 
   other_cells = carousel.querySelectorAll(".carousel_cell");
-  other_cells.forEach(cell => {
+  other_cells.forEach((cell) => {
     cell.classList.remove("active");
   });
 
@@ -49,26 +49,13 @@ prevButton.addEventListener("click", previous);
 var nextButton = document.querySelector(".next_button");
 nextButton.addEventListener("click", next);
 
-
-/* ==================
---- Sound Effects ---
-=================== */
-
-function soundPlay(sound) {
-  // $('audio').each(function () {
-  //   this.pause();
-  //   this.currentTime = 0;
-  // });
-  // sound.on({play: function() {
-    // sound.pause();
-    // sound.currentTime = 0;
-  // }});
-  // if (sound[0].currentTime > 0) {
-  // }
-  sound.trigger("pause");
-  sound[0].currentTime = 0;
-  // sound.play();
-  sound.trigger("play");
+// left & right event
+function playSound(sound) {
+  $("audio").each(function () {
+    this.pause();
+    this.currentTime = 0;
+  });
+  sound.play();
 }
 
 function soundStop(sound) {
@@ -76,15 +63,12 @@ function soundStop(sound) {
   sound.currentTime = 0;
 }
 
-// const D = document.getElementById("D");
-// const DD = document.getElementById("DD");
-// const F = document.getElementById("FF");
-// const G = document.getElementById("G");
 const D = $("#D");
 const DD = $("#DD");
 const FF = $("#FF");
 const G = $("#G");
 const soundList = [G, D, D, DD, D, FF, G];
+const youSuffer = document.getElementById("youSuffer");
 
 var index = 0;
 const soundLen = soundList.length;
@@ -107,6 +91,7 @@ document.onkeydown = (e) => {
       next();
       break;
 
+<<<<<<< HEAD
     case "a":
       var e = jQuery.Event("keydown");
       var interval = 400;
@@ -138,6 +123,15 @@ document.onkeydown = (e) => {
         e.key = "ArrowRight";
         $("body").trigger(e);
       }, interval*6);
+=======
+    case "Space":
+      youSuffer.play();
+      // prevent space bar from scrolling page
+      if(e.target == document.body) {
+        e.preventDefault();
+      }
+      break;
+>>>>>>> master
   }
 };
 

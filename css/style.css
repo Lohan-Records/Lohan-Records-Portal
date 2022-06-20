@@ -9,8 +9,8 @@
           transform-style: preserve-3d;
   font-weight: bold;
   font-family: Courier New, Courier, monospace;
-  -webkit-animation: dna_move 50s linear 3s infinite;
-          animation: dna_move 50s linear 3s infinite;
+  -webkit-animation: dna_move 100s linear 3s infinite;
+          animation: dna_move 100s linear 3s infinite;
 }
 
 .DNA .dna_cell:nth-child(49) {
@@ -605,6 +605,7 @@
 
 .carousel_cell img {
   width: 82%;
+  height: 82%;
   -webkit-transform: translateY(11.5%);
           transform: translateY(11.5%);
 }
@@ -730,6 +731,7 @@
   }
   .carousel_cell img {
     width: 82%;
+    height: 82%;
     -webkit-transform: translateY(11.5%);
             transform: translateY(11.5%);
   }
@@ -841,6 +843,7 @@
   }
   .carousel_cell img {
     width: 82%;
+    height: 82%;
     -webkit-transform: translateY(11.5%);
             transform: translateY(11.5%);
   }
@@ -926,6 +929,10 @@ body {
   text-align: center;
 }
 
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -940,7 +947,8 @@ a {
   position: absolute;
   width: 100%;
   left: 50%;
-  top: 53%;
+  top: 50vh;
+  max-height: 90vh;
   -webkit-transform: translate3d(-50%, -50%, 800px);
           transform: translate3d(-50%, -50%, 800px);
 }
@@ -990,7 +998,6 @@ a {
 }
 
 .loading {
-  display: none;
   z-index: 9999;
   -webkit-transform: translateZ(900px);
           transform: translateZ(900px);
@@ -999,12 +1006,12 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 110vh;
+  height: 130vh;
 }
 
 .loading img {
   position: absolute;
-  top: 45%;
+  top: 50vh;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1080,12 +1087,17 @@ a {
   width: 250px;
 }
 
+.hint {
+  display: block;
+  text-align: left;
+  color: white;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 0;
+  left: 1rem;
+}
+
 @media (max-width: 769px) {
-  .central {
-    top: 45%;
-    -webkit-transform: translate3d(-50%, -50%, 800px);
-            transform: translate3d(-50%, -50%, 800px);
-  }
   .logo {
     width: 32vw;
   }
@@ -1095,13 +1107,14 @@ a {
   #shopee_link img {
     width: 180px;
   }
+  .hint {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
   .central {
-    top: 10%;
-    -webkit-transform: translate3d(-50%, 0, 800px);
-            transform: translate3d(-50%, 0, 800px);
+    top: 53vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

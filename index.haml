@@ -68,66 +68,66 @@
 						target: "_blank",
 						rel: "noopener noreferrer",
 					}
-						%img(src="src/product/不懂事基金會.jpg" alt="不懂事基金會" loading="lazy")/
+						%img(src="src/product/不懂事基金會.jpg" alt="不懂事基金會")/
 
 					%a.carousel_cell{
 						href: "https://shopee.tw/羅漢果黑膠選片公司-堪用軀殼-i.19814768.9034805382",
 						target: "_blank",
 						rel: "noopener noreferrer",
 					}
-						%img(src="src/product/堪用軀殼.jpg" alt="堪用軀殼" loading="lazy")/
+						%img(src="src/product/堪用軀殼.jpg" alt="堪用軀殼")/
 
 					%a.carousel_cell{
 						href: "https://shopee.tw/羅漢果黑膠選片公司-超性感焦慮-i.19814768.12970794338",
 						target: "_blank",
 						rel: "noopener noreferrer",
 					}
-						%img(src="src/product/超性感焦慮.jpg" alt="超性感焦慮" loading="lazy")/
+						%img(src="src/product/超性感焦慮.jpg" alt="超性感焦慮")/
 
 					%a.carousel_cell{
 						href: "https://shopee.tw/羅漢果黑膠選片公司-不要把雞蛋放在藍自理-i.19814768.8537582177?sp_atk=e441c795-ca82-49c2-97c9-2e944069170e",
 						target: "_blank",
 						rel: "noopener noreferrer",
 					}
-						%img(src="src/product/雞蛋不要放在籃子裡.jpg" alt="雞蛋不要放在籃子裡" loading="lazy")/
+						%img(src="src/product/雞蛋不要放在籃子裡.jpg" alt="雞蛋不要放在籃子裡")/
 
 					%a.carousel_cell{
 						href: "https://shopee.tw/羅漢果黑膠選片公司-碼頭姑娘-i.19814768.12816577816",
 						target: "_blank",
 						rel: "noopener noreferrer",
 					}
-						%img(src="src/product/碼頭姑娘_1.jpg" alt="碼頭姑娘_1" loading="lazy")/
+						%img(src="src/product/碼頭姑娘_1.jpg" alt="碼頭姑娘_1")/
 
 					%a.carousel_cell{
 						href: "https://shopee.tw/羅漢果黑膠選片公司-酷的博士-i.19814768.11485291827?sp_atk=ef73cddc-a2c4-4d45-851f-143591b5024b",
 						target: "_blank",
 						rel: "noopener noreferrer",
 					}
-						%img(src="src/product/酷的博士.jpg" alt="酷的博士" loading="lazy")/
+						%img(src="src/product/酷的博士.jpg" alt="酷的博士")/
 
 					%a.carousel_cell{
 						href: "https://shopee.tw/羅漢果黑膠選片公司-來福駭客-i.19814768.13273942656?sp_atk=fd3768b1-714e-42dc-9d45-c37cdc5e8f6e",
 						target: "_blank",
 						rel: "noopener noreferrer",
 					}
-						%img(src="src/product/來福駭客.jpg" alt="來福駭客" loading="lazy")/
+						%img(src="src/product/來福駭客.jpg" alt="來福駭客")/
 
 					%a.carousel_cell{
 						href: "https://shopee.tw/羅漢果黑膠選片公司-黑膠T-i.19814768.14546294253?sp_atk=17b6e67d-f893-449d-9f26-d19728f0d339",
 						target: "_blank",
 						rel: "noopener noreferrer",
 					}
-						%img(src="src/product/羅漢果白T.jpg" alt="羅漢果白T" loading="lazy")/
+						%img(src="src/product/羅漢果白T.jpg" alt="羅漢果白T")/
 
 					%a.carousel_cell{
 						href: "javascript: void(0);",
 					}
-						%img(src="src/product/碼頭姑娘_2.jpg" alt="碼頭姑娘_2" loading="lazy")/
+						%img(src="src/product/碼頭姑娘_2.jpg" alt="碼頭姑娘_2")/
 
 					%a.carousel_cell{
 						href: "javascript: void(0);",
 					}
-						%img(src="src/product/羅漢果帽T.jpg" alt="羅漢果帽T" loading="lazy")/
+						%img(src="src/product/羅漢果帽T.jpg" alt="羅漢果帽T")/
 
 				-# switch button
 				%a.carousel_button.previous_button
@@ -143,6 +143,14 @@
 			}
 				%img(src="src/button/選購酷的衣服.png" alt="蝦皮賣場＿羅漢果黑膠選片公司")/
 
+		-# Hint
+		%p(class= "hint")
+			使用 ⇠ ⇢ 瀏覽
+			%br
+			按壓 空白鍵 Space 獲得驚喜
+			%br
+			若驚喜過度本公司恕不負任何責任
+
 		-# LOGO DNA
 		.DNA
 			-# js append img
@@ -152,14 +160,14 @@
 		%audio#DD(src="src/sound/shepard-note-dd.mp3")
 		%audio#FF(src="src/sound/shepard-note-ff.mp3")
 		%audio#G(src="src/sound/shepard-note-g.mp3")
-
+		%audio#youSuffer(src="src/sound/youSuffer.mp3")
 
 		-# SCRIPT
 		%script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
 		%script(src="js/carousel.js")
 
 		:javascript
-			// loading animation
+			// var loading_time = 0;
 			var loading_time = 3300;
 			setTimeout(()=> { $(".loading").fadeOut(500); }, loading_time);
 
