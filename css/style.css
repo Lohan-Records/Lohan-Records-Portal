@@ -1088,13 +1088,14 @@ a {
 }
 
 .hint {
+  font-size: .8rem;
   display: block;
-  text-align: left;
+  text-align: right;
   color: white;
   opacity: 0.3;
   position: fixed;
   bottom: 0;
-  left: 1rem;
+  right: 1rem;
 }
 
 @media (max-width: 769px) {
